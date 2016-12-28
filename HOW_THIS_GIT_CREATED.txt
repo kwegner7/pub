@@ -1,7 +1,7 @@
 #===============================================================================
 # publish things like photos
 #===============================================================================
-cd /data/proj/pub/photos/2016-10
+cd /home/data/proj/pub/photos/2016-10
 and click on index.html
 
 #===============================================================================
@@ -11,16 +11,23 @@ Show the pictures:
     http://kwegner7.github.io/pub/photos/2016-10/index.html
 
 This is the local location of the photos:
-    /data/proj/pub/photos/2016-10
+    /home/data/proj/pub/photos/2016-10
 
 This is the github repository:
     https://github.com/kwegner7/pub.git
+
+Clone this repository to current director:
+    git clone https://github.com/kwegner7/pub.git
+    the remote from github is called origin/master
+    git checkout gh-pages
+    # This pushes the HEAD of my local gh-pages to the HEAD of github gh-pages
+    git push origin refs/heads/gh-pages # this is a hash
 
 Create a new repository:
     https://github.com/kwegner7/pub 
 
 And the link will be:
-    http://kwegner7.github.io/pub
+    http://kwegner7.github.io/pub/photos/2016-10/
 
 #===============================================================================
 # HOW THIS WEBSITE PAGE WAS CREATED
@@ -30,7 +37,7 @@ And the link will be:
   cd /data/proj/pub
   git init
   git add . 
-  git commit -m "Levi's Website"
+  git commit -m "Publish Things"
 
 # Remember each Remote and the Local consists of a set of Branches
 # When we checkout from the Local, we must specify one of the Local Branches
@@ -40,16 +47,44 @@ And the link will be:
   git checkout master # this is the HEAD of the "master" branch
     # git log shows that its HASH is:
     # 7177010dab29b8458c94f318655afe931ebc7892 (call this C0)
-    # stored as one line in /data/proj/git/levi/.git/refs/heads/master
+    # stored as one line in /data/proj/pub/.git/refs/heads/master
 
 git branch --verbose # shows that this commit is the HEAD of branch master
-* master 7177010 Levi's Website
+* master a8f8fd8 Publish Things
 
 # Locally, create a branch with a special name, it is this branch that GitHub
 # will export as web pages
   git branch gh-pages
   git checkout gh-pages
   git push -u github gh-pages # not yet
+
+#===============================================================================
+# Manually create a new repository at GitHub
+#===============================================================================
+  click New Repository, then enter name "pub", then Create, then copy the link
+  location of GitHub repository is: https://github.com/kwegner7/pub.git
+
+  # Add the new Github repository as a remote
+  cd /data/proj/pub
+  git remote add github https://github.com/kwegner7/pub.git
+  git remote -v
+  git status and possibly commit
+  git push github refs/heads/master refs/heads/gh-pages
+
+NOW WE CAN SEE THE PHOTOS:
+
+
+  # This simplifies the push commands
+    git push -u github gh-pages
+        Branch gh-pages set up to track remote branch gh-pages from github.
+    git push -u backup gh-pages
+  # So that:
+    git push github
+        now means:
+            git push github refs/heads/gh-pages
+    git push backup
+        now means:
+            git push backup refs/heads/gh-pages
 
 # DISCUSSION: We now have these references:
    .../.git/refs/heads/master refers to C0
@@ -137,31 +172,7 @@ At this point "local" config looks like:
   git diff refs/heads/gh-pages refs/remotes/backup/gh-pages
   git diff refs/heads/gh-pages refs/remotes/backup/master
 
-  ##############################################################
-  # Manually create a new repository at GitHub
-  ##############################################################
-  click New Repository, then enter name "levi", then Create, then copy the link
-  it should be: https://github.com/kwegner7/levi.git
-            is: https://github.com/kwegner7/levi.git
 
-  # Add the new Github repository as a remote
-  cd /data/proj/git/levi
-  git remote add github https://github.com/kwegner7/levi.git
-  git remote -v
-  git status and possibly commit
-  git push github refs/heads/master refs/heads/gh-pages
-
-  # This simplifies the push commands
-    git push -u github gh-pages
-        Branch gh-pages set up to track remote branch gh-pages from github.
-    git push -u backup gh-pages
-  # So that:
-    git push github
-        now means:
-            git push github refs/heads/gh-pages
-    git push backup
-        now means:
-            git push backup refs/heads/gh-pages
 
   ##############################################################
   # HOW TO MERGE BRANCH gh-pages BACK INTO master
