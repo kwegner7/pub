@@ -1,54 +1,68 @@
+#===============================================================================
+# Links
+#===============================================================================
+Show the pictures:
+    http://kwegner7.github.io/pub/photos/2016-10/index.html
 
-http://kwegner7.github.io/publish/photos/2016-10/index.html
+This is the local location of the photos:
+    /home/data/proj/pubnew/pub/photos/2016-10
 
-     declare NEW_ALBUM="2016-10"
-     cd /data/proj/publish/photos/${NEW_ALBUM}
-     cd /data/edit-pictures/${NEW_ALBUM}
+This is the github repository:
+    https://github.com/kwegner7/pub.git
 
-Create a new folder under /data/proj/publish/photos/
-     declare NEW_ALBUM="2016-10"
-     cd /data/proj/publish/photos/
-     mkdir --parents ${NEW_ALBUM} ${NEW_ALBUM}/images
-     cd /data/proj/publish/photos/${NEW_ALBUM}
-     cp ../template/index.html .
-     cp ../template/methods.js .
-     cp ../template/classes.js .
-     cp ../template/entry-points.js .
-     cp ../template/styles.css .
+#===============================================================================
+# Create and Upload a new Album
+#===============================================================================
 
-Determine the pictures:
-     declare NEW_ALBUM="2016-10"
-     cd /data/edit-pictures
-     mkdir ${NEW_ALBUM}
+    declare NEW_ALBUM="2016-12"
+    declare PUB=/home/data/proj/pubnew/pub
+    declare PHOTOS=${PUB}/photos
+    declare EDIT_PICTURES=/home/pictures/edit-pictures
 
-     MOVE ORIGINAL BIG PICTURES INTO
-        /data/edit-pictures/${NEW_ALBUM}
+    # initialize the new photos folder
+    cd ${PHOTOS}
+    mkdir --parents ${NEW_ALBUM} ${NEW_ALBUM}/images
+    cd ${NEW_ALBUM}
+    cp ../template/index.html .
+    cp ../template/methods.js .
+    cp ../template/classes.js .
+    cp ../template/entry-points.js .
+    cp ../template/styles.css .
 
-     rm -rf /data/edit-pictures/${NEW_ALBUM}/smaller
-     picture-smaller.bsh /data/edit-pictures/${NEW_ALBUM}
-        THIS CREATES /data/edit-pictures/${NEW_ALBUM}/smaller
+------------------------------------------
+dpkg --get-selections 
+apt list --installed
+sudo apt-get check
+             autoclean
+             clean
+             update
+     # apt-get install exiftool
+------------------------------------
 
-     rm -rf /data/proj/publish/photos/${NEW_ALBUM}/images/
-     mkdir --parents /data/proj/publish/photos/${NEW_ALBUM}/images/
-     cp /data/edit-pictures/${NEW_ALBUM}/smaller/* \
-        /data/proj/publish/photos/${NEW_ALBUM}/images/
+#Reduce the size of the photos into smaller folder:
+     cd ${EDIT_PICTURES}/${NEW_ALBUM}
+     rm -rf ./smaller
+     picture-smaller.bsh ${EDIT_PICTURES}/${NEW_ALBUM}
 
-        AND MODIFY /data/proj/common/photos/${NEW_ALBUM}/methods.js to include:
-        cd /data/proj/common/photos/${NEW_ALBUM}
-        gedit methods.js &
-            "IMG_1531.JPG",
-            "IMG_1532.JPG",
-            "IMG_1533.JPG",
-            "IMG_1534.JPG",
+#Copy and paste the list into 
+        gedit ${PHOTOS}/${NEW_ALBUM}/methods.js &
 
-        cd /data/proj/publish/photos/${NEW_ALBUM}/images
-        for FILE in `ls -1`; do
-            echo -e "        \"${FILE}\","
-        done
+#Copy all of the smaller pictures to the images folder:
+     cd ${PHOTOS}/${NEW_ALBUM}
+     rm -rf ./images && mkdir --parents ./images
+     cp ${EDIT_PICTURES}/${NEW_ALBUM}/smaller/* ${PHOTOS}/${NEW_ALBUM}/images/
 
 Now upload to GitHub:
-    git commit -am "push"
-    git push github
+    cd ${PUB}
+    git status
+    # move the file from "unstaged in working folder" to be "staged" 
+      git add 
+    # following will update the HEAD of my local gh-pages from the staged items
+    # since my current checkout is gh-pages
+      git commit -m "Upload from Bogor"
+    # This pushes the HEAD of my local gh-pages to the HEAD of github gh-pages
+      git push origin refs/heads/gh-pages # this is a hash
+
 
 
 

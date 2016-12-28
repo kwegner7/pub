@@ -16,12 +16,19 @@ This is the local location of the photos:
 This is the github repository:
     https://github.com/kwegner7/pub.git
 
-Clone this repository to current director:
+Clone this repository to current directory:
     git clone https://github.com/kwegner7/pub.git
     the remote from github is called origin/master
     git checkout gh-pages
+    modify this file
+    git status
+    # move the file from "unstaged in working folder" to be "staged" 
+      git add HOW_THIS_GIT_CREATED.txt
+    # following will update the HEAD of my local gh-pages from the staged items
+    # since my current checkout is gh-pages
+      git commit -m "Upload from Bogor"
     # This pushes the HEAD of my local gh-pages to the HEAD of github gh-pages
-    git push origin refs/heads/gh-pages # this is a hash
+      git push origin refs/heads/gh-pages # this is a hash
 
 Create a new repository:
     https://github.com/kwegner7/pub 
