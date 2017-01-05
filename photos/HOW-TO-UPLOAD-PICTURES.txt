@@ -1,68 +1,63 @@
-#===============================================================================
-# Links
-#===============================================================================
-Show the pictures:
-    http://kwegner7.github.io/pub/photos/2016-10/index.html
 
-This is the local location of the photos:
-    /home/data/proj/pubnew/pub/photos/2016-10
+HERE IS THE LINK:
+    http://kwegner7.github.io/pub/photos/toOsiFriends
 
-This is the github repository:
-    https://github.com/kwegner7/pub.git
+HOW TO CREATE A NEW ALBUM:
+     declare NEW_ALBUM="2016-10"
+     cd /data/proj/pub/photos/${NEW_ALBUM}
+     cd /data/edit-pictures/${NEW_ALBUM}
 
-#===============================================================================
-# Create and Upload a new Album
-#===============================================================================
+HOW TO CREATE A NEW ALBUM UNDER /data/proj/pub/photos/
+     declare NEW_ALBUM="toOsiFriends"
+     cd /home/data/proj/pub/photos/
+     mkdir --parents ${NEW_ALBUM} ${NEW_ALBUM}/images
+     cd /home/data/proj/pub/photos/${NEW_ALBUM}
+     cp ../template/index.html .
+     cp ../template/methods.js .
+     cp ../template/classes.js .
+     cp ../template/entry-points.js .
+     cp ../template/styles.css .
 
-    declare NEW_ALBUM="2016-12"
-    declare PUB=/home/data/proj/pubnew/pub
-    declare PHOTOS=${PUB}/photos
-    declare EDIT_PICTURES=/home/pictures/edit-pictures
+SELECT THE PICTURES:
+     declare NEW_ALBUM="toOsiFriends"
+     cd /data/edit-pictures
+     mkdir --parents ${NEW_ALBUM}
 
-    # initialize the new photos folder
-    cd ${PHOTOS}
-    mkdir --parents ${NEW_ALBUM} ${NEW_ALBUM}/images
-    cd ${NEW_ALBUM}
-    cp ../template/index.html .
-    cp ../template/methods.js .
-    cp ../template/classes.js .
-    cp ../template/entry-points.js .
-    cp ../template/styles.css .
+     MOVE ORIGINAL BIG PICTURES INTO
+        /data/edit-pictures/${NEW_ALBUM}
 
-------------------------------------------
-dpkg --get-selections 
-apt list --installed
-sudo apt-get check
-             autoclean
-             clean
-             update
-     # apt-get install exiftool
-------------------------------------
+     picture-smaller.bsh /home/pictures/edit-pictures/toOsiFriends/
+     cp /home/pictures/edit-pictures/toOsiFriends/smaller/* \
+        /home/data/proj/pub/photos/${NEW_ALBUM}/images/
 
-#Reduce the size of the photos into smaller folder:
-     cd ${EDIT_PICTURES}/${NEW_ALBUM}
-     rm -rf ./smaller
-     picture-smaller.bsh ${EDIT_PICTURES}/${NEW_ALBUM}
 
-#Copy and paste the list into 
-        gedit ${PHOTOS}/${NEW_ALBUM}/methods.js &
 
-#Copy all of the smaller pictures to the images folder:
-     cd ${PHOTOS}/${NEW_ALBUM}
-     rm -rf ./images && mkdir --parents ./images
-     cp ${EDIT_PICTURES}/${NEW_ALBUM}/smaller/* ${PHOTOS}/${NEW_ALBUM}/images/
+     rm -rf /data/edit-pictures/${NEW_ALBUM}/smaller
+     picture-smaller.bsh /data/edit-pictures/${NEW_ALBUM}
+        THIS CREATES /data/edit-pictures/${NEW_ALBUM}/smaller
+
+     rm -rf /data/proj/pub/photos/${NEW_ALBUM}/images/
+     mkdir --parents /home/data/proj/pub/photos/${NEW_ALBUM}/images/
+     cp /data/edit-pictures/${NEW_ALBUM}/smaller/* \
+        /data/proj/pub/photos/${NEW_ALBUM}/images/
+
+        AND MODIFY /data/proj/common/photos/${NEW_ALBUM}/methods.js to include:
+        cd /data/proj/common/photos/${NEW_ALBUM}
+        gedit methods.js &
+            "IMG_1531.JPG",
+            "IMG_1532.JPG",
+            "IMG_1533.JPG",
+            "IMG_1534.JPG",
+
+        cd /data/proj/pub/photos/${NEW_ALBUM}/images
+        for FILE in `ls -1`; do
+            echo -e "        \"${FILE}\","
+        done
 
 Now upload to GitHub:
-    cd ${PUB}
-    git status
-    # move the file from "unstaged in working folder" to be "staged" 
-      git add 
-    # following will update the HEAD of my local gh-pages from the staged items
-    # since my current checkout is gh-pages
-      git commit -m "Upload from Bogor"
-    # This pushes the HEAD of my local gh-pages to the HEAD of github gh-pages
-      git push origin refs/heads/gh-pages # this is a hash
-
+    cd /data/proj/pub
+    git commit -am "push photos"
+    git push github
 
 
 
@@ -88,8 +83,8 @@ then it needs to implement only:
 
 
 
-The structure of publish:
-publish/
+The structure of pub:
+pub/
     classes.js entry-points.js methods.js styles.css (common)
     page-type1/
     page-type2/
@@ -107,9 +102,9 @@ Open:
      /data/proj/common/photos/new-album/index.html
 
      
-How to publish so that the link is:
+How to pub so that the link is:
 
-    http://kwegner7.github.io/publish/photos/nary-and-kurt
+    http://kwegner7.github.io/pub/photos/nary-and-kurt
     
     Move the following files to /data/proj/git/website
         /data/proj/common/photos
@@ -134,7 +129,7 @@ github  https://github.com/kwegner7/camp.git (push)
     git push backup master
     git push github master
 
-https://github.com/kwegner7/publish.git
+https://github.com/kwegner7/pub.git
   git push github refs/heads/master refs/heads/gh-pages
 
     git push -u github gh-pages
