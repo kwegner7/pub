@@ -2,7 +2,7 @@ BEGIN:VCALENDAR
 CALSCALE:GREGORIAN
 PRODID:-//Ximian//NONSGML Evolution Calendar//EN
 VERSION:2.0
-X-EVOLUTION-DATA-REVISION:2017-03-04T19:19:10.944759Z(0)
+X-EVOLUTION-DATA-REVISION:2017-03-15T00:03:17.102026Z(0)
 BEGIN:VTIMEZONE
 TZID:/freeassociation.sourceforge.net/America/Denver
 X-LIC-LOCATION:America/Denver
@@ -6659,6 +6659,148 @@ BEGIN:VALARM
 X-EVOLUTION-ALARM-UID:
  20170304T191910Z-5489-1000-1293-11@kurt-Inspiron-15-7579
 DESCRIPTION:12 DVDs Penrose
+ACTION:DISPLAY
+TRIGGER;VALUE=DURATION;RELATED=START:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20170305T142745Z-3072-1000-1296-0@kurt-Inspiron-15-7579
+DTSTAMP:20170305T133341Z
+DTSTART;VALUE=DATE:20170519
+DTEND;VALUE=DATE:20170522
+SEQUENCE:2
+SUMMARY:Special Camp Retreat
+CLASS:PUBLIC
+TRANSP:TRANSPARENT
+CREATED:20170305T142803Z
+LAST-MODIFIED:20170305T142803Z
+BEGIN:VALARM
+X-EVOLUTION-ALARM-UID:
+ 20170305T142803Z-3072-1000-1296-15@kurt-Inspiron-15-7579
+DESCRIPTION:Special Camp Retreat
+ACTION:DISPLAY
+TRIGGER;VALUE=DURATION;RELATED=START:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20170308T182934Z-5173-1000-1252-64@kurt-Inspiron-15-7579
+DTSTAMP:20170307T165434Z
+DTSTART;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20170326T173000
+DTEND;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20170326T193000
+SEQUENCE:2
+SUMMARY:Bible Study Group
+DESCRIPTION:n planning for March\, we need to finalize one item. Sheryl 
+ and I will be hosting our group on Sunday\, March 26th  We need someone 
+ to volunteer to host this coming Sunday\, March 12th. If you can host our 
+ group\, please reply to me by this Tuesday\, March 7th. Remember that our 
+ meeting time is now 5:30 pm.\n\nFor April\, we will continue to meet on 
+ the 2nd and 4th Sundays of the month\, the 9th and the 23rd.\n\n
+CLASS:PUBLIC
+TRANSP:OPAQUE
+CREATED:20170308T182934Z
+LAST-MODIFIED:20170308T182934Z
+BEGIN:VALARM
+X-EVOLUTION-ALARM-UID:
+ 20170308T182730Z-5173-1000-1252-49@kurt-Inspiron-15-7579
+DESCRIPTION:Bible Study Group
+ACTION:DISPLAY
+TRIGGER;VALUE=DURATION;RELATED=START:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20170308T182942Z-5173-1000-1252-65@kurt-Inspiron-15-7579
+DTSTAMP:20170307T165434Z
+DTSTART;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20170409T173000
+DTEND;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20170409T193000
+SEQUENCE:2
+SUMMARY:Bible Study Group
+DESCRIPTION:n planning for March\, we need to finalize one item. Sheryl 
+ and I will be hosting our group on Sunday\, March 26th  We need someone 
+ to volunteer to host this coming Sunday\, March 12th. If you can host our 
+ group\, please reply to me by this Tuesday\, March 7th. Remember that our 
+ meeting time is now 5:30 pm.\n\nFor April\, we will continue to meet on 
+ the 2nd and 4th Sundays of the month\, the 9th and the 23rd.\n\n
+CLASS:PUBLIC
+TRANSP:OPAQUE
+CREATED:20170308T182942Z
+LAST-MODIFIED:20170308T182942Z
+BEGIN:VALARM
+X-EVOLUTION-ALARM-UID:
+ 20170308T182730Z-5173-1000-1252-49@kurt-Inspiron-15-7579
+DESCRIPTION:Bible Study Group
+ACTION:DISPLAY
+TRIGGER;VALUE=DURATION;RELATED=START:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20170308T182948Z-5173-1000-1252-66@kurt-Inspiron-15-7579
+DTSTAMP:20170307T165434Z
+DTSTART;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20170423T173000
+DTEND;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20170423T193000
+SEQUENCE:2
+SUMMARY:Bible Study Group
+DESCRIPTION:n planning for March\, we need to finalize one item. Sheryl 
+ and I will be hosting our group on Sunday\, March 26th  We need someone 
+ to volunteer to host this coming Sunday\, March 12th. If you can host our 
+ group\, please reply to me by this Tuesday\, March 7th. Remember that our 
+ meeting time is now 5:30 pm.\n\nFor April\, we will continue to meet on 
+ the 2nd and 4th Sundays of the month\, the 9th and the 23rd.\n\n
+CLASS:PUBLIC
+TRANSP:OPAQUE
+CREATED:20170308T182948Z
+LAST-MODIFIED:20170308T182948Z
+BEGIN:VALARM
+X-EVOLUTION-ALARM-UID:
+ 20170308T182730Z-5173-1000-1252-49@kurt-Inspiron-15-7579
+DESCRIPTION:Bible Study Group
+ACTION:DISPLAY
+TRIGGER;VALUE=DURATION;RELATED=START:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20170309T030022Z-2495-1000-1236-0@kurt-Inspiron-15-7579
+DTSTAMP:20170309T025351Z
+DTSTART;VALUE=DATE:20170313
+DTEND;VALUE=DATE:20170314
+SEQUENCE:2
+SUMMARY:SEND DON SIGNATURE
+CLASS:PUBLIC
+TRANSP:TRANSPARENT
+CREATED:20170309T030036Z
+LAST-MODIFIED:20170309T030036Z
+BEGIN:VALARM
+X-EVOLUTION-ALARM-UID:
+ 20170309T030036Z-2495-1000-1236-12@kurt-Inspiron-15-7579
+DESCRIPTION:SEND DON SIGNATURE
+ACTION:DISPLAY
+TRIGGER;VALUE=DURATION;RELATED=START:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20170315T000226Z-3338-1000-1262-0@kurt-Inspiron-15-7579
+DTSTAMP:20170314T233613Z
+DTSTART;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20170503T190000
+DTEND;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20170503T193000
+SEQUENCE:2
+SUMMARY:Vertical Church Band
+DESCRIPTION:James MacDonald\n\nwith Vertical Church\n\nBand\n\nMay 3\, 
+ 2017\n\n7:00 PM Show\n\nHarvest Bible Chapel - Denver\n\nEnglewood\, CO
+CLASS:PUBLIC
+TRANSP:OPAQUE
+CREATED:20170315T000317Z
+LAST-MODIFIED:20170315T000317Z
+BEGIN:VALARM
+X-EVOLUTION-ALARM-UID:
+ 20170315T000317Z-3338-1000-1262-11@kurt-Inspiron-15-7579
+DESCRIPTION:Vertical Church Band
 ACTION:DISPLAY
 TRIGGER;VALUE=DURATION;RELATED=START:-PT2H
 END:VALARM
