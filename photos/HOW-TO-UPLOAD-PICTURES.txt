@@ -1,14 +1,18 @@
 
 HERE IS THE LINK:
-    http://kwegner7.github.io/pub/photos/toOsiFriends
+    http://kwegner7.github.io/pub/photos/NaryPaintings
+    /home/data/proj/pub/photos/NaryPaintings/index.html
 
-HOW TO CREATE A NEW ALBUM:
-     declare NEW_ALBUM="2016-10"
-     cd /data/proj/pub/photos/${NEW_ALBUM}
-     cd /data/edit-pictures/${NEW_ALBUM}
+SELECT THE PICTURES FROM SHOTWELL:
+     declare NEW_ALBUM="NaryPaintings"
+     cd /home/pictures/edit-pictures
+     mkdir --parents ${NEW_ALBUM}
+     EXPORT FROM SHOTWELL MOVE ORIGINAL BIG PICTURES INTO
+        /home/pictures/edit-pictures/${NEW_ALBUM}
+     picture-smaller.bsh /home/pictures/edit-pictures/${NEW_ALBUM}
 
-HOW TO CREATE A NEW ALBUM UNDER /data/proj/pub/photos/
-     declare NEW_ALBUM="toOsiFriends"
+HOW TO CREATE A NEW ALBUM UNDER /home/data/proj/pub/photos/
+     declare NEW_ALBUM="NaryPaintings"
      cd /home/data/proj/pub/photos/
      mkdir --parents ${NEW_ALBUM} ${NEW_ALBUM}/images
      cd /home/data/proj/pub/photos/${NEW_ALBUM}
@@ -18,20 +22,23 @@ HOW TO CREATE A NEW ALBUM UNDER /data/proj/pub/photos/
      cp ../template/entry-points.js .
      cp ../template/styles.css .
 
-SELECT THE PICTURES:
-     declare NEW_ALBUM="toOsiFriends"
-     cd /data/edit-pictures
-     mkdir --parents ${NEW_ALBUM}
+NOW COPY THE SMALLER PICTURES INTO THE IMAGES
+    cp /home/pictures/edit-pictures/${NEW_ALBUM}/smaller/* \
+       /home/data/proj/pub/photos/${NEW_ALBUM}/images/
 
-     MOVE ORIGINAL BIG PICTURES INTO
-        /data/edit-pictures/${NEW_ALBUM}
+FINALLY MODIFY
+    /home/data/proj/pub/photos/${NEW_ALBUM}/methods.js to include:
 
-     picture-smaller.bsh /home/pictures/edit-pictures/toOsiFriends/
-     cp /home/pictures/edit-pictures/toOsiFriends/smaller/* \
-        /home/data/proj/pub/photos/${NEW_ALBUM}/images/
+        gedit methods.js &
+            "IMG_1531.JPG",
+            "IMG_1532.JPG",
+            "IMG_1533.JPG",
+            "IMG_1534.JPG",
 
 
 
+
+OBSOLETE
      rm -rf /data/edit-pictures/${NEW_ALBUM}/smaller
      picture-smaller.bsh /data/edit-pictures/${NEW_ALBUM}
         THIS CREATES /data/edit-pictures/${NEW_ALBUM}/smaller
