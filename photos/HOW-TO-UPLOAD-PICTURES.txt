@@ -35,6 +35,14 @@ FINALLY MODIFY
             "IMG_1533.JPG",
             "IMG_1534.JPG",
 
+NOW UPLOAD TO GITHUB
+    cd /home/data/proj/pub
+    git add ...
+    git commit -m "Update Photos"
+    git push origin gh-pages
+    cd /home/data/proj/pub
+
+
 
 
 
