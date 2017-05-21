@@ -5,7 +5,7 @@
 function listOfImages()
 {
     return [
-    "IMG_3140.JPG",
+   "IMG_3140.JPG",
     "IMG_3141.JPG",
     "IMG_3142.JPG",
     "IMG_3143.JPG",
@@ -18,6 +18,11 @@ function listOfImages()
     "IMG_3150.JPG",
     "IMG_3151.JPG",
     "IMG_3152.JPG",
+    "IMG_3153.JPG",
+    "IMG_3154.JPG",
+    "IMG_3155.JPG",
+    "IMG_3156.JPG",
+    "IMG_3157.JPG",
     ];
 }
 

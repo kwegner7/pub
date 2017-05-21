@@ -1,7 +1,7 @@
 
 HERE IS THE LINK:
-    http://kwegner7.github.io/pub/photos/NaryPaintings
-    /home/data/proj/pub/photos/NaryPaintings/index.html
+    http://kwegner7.github.io/pub/photos/SpecialCampRetreat
+    /home/data/proj/pub/photos/SpecialCampRetreat/index.html
 
 SELECT THE PICTURES FROM SHOTWELL:
      declare NEW_ALBUM="SpecialCampRetreat"
