@@ -4,7 +4,7 @@ HERE IS THE LINK:
     /home/data/proj/pub/photos/NaryPaintings/index.html
 
 SELECT THE PICTURES FROM SHOTWELL:
-     declare NEW_ALBUM="NaryPaintings"
+     declare NEW_ALBUM="SpecialCampRetreat"
      cd /home/pictures/edit-pictures
      mkdir --parents ${NEW_ALBUM}
      EXPORT FROM SHOTWELL MOVE ORIGINAL BIG PICTURES INTO
@@ -12,7 +12,7 @@ SELECT THE PICTURES FROM SHOTWELL:
      picture-smaller.bsh /home/pictures/edit-pictures/${NEW_ALBUM}
 
 HOW TO CREATE A NEW ALBUM UNDER /home/data/proj/pub/photos/
-     declare NEW_ALBUM="NaryPaintings"
+     declare NEW_ALBUM="SpecialCampRetreat"
      cd /home/data/proj/pub/photos/
      mkdir --parents ${NEW_ALBUM} ${NEW_ALBUM}/images
      cd /home/data/proj/pub/photos/${NEW_ALBUM}
@@ -27,7 +27,7 @@ NOW COPY THE SMALLER PICTURES INTO THE IMAGES
        /home/data/proj/pub/photos/${NEW_ALBUM}/images/
 
 FINALLY MODIFY
-    /home/data/proj/pub/photos/${NEW_ALBUM}/methods.js to include:
+ cd   /home/data/proj/pub/photos/${NEW_ALBUM}/methods.js to include:
 
         gedit methods.js &
             "IMG_1531.JPG",
