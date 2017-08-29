@@ -4,7 +4,7 @@ HERE IS THE LINK:
     /home/data/proj/pub/photos/SpecialCampRetreat/index.html
 
 SELECT THE PICTURES FROM SHOTWELL:
-     declare NEW_ALBUM="SpecialCampRetreat"
+     declare NEW_ALBUM="AkemiFamily"
      cd /home/pictures/edit-pictures
      mkdir --parents ${NEW_ALBUM}
      EXPORT FROM SHOTWELL MOVE ORIGINAL BIG PICTURES INTO
@@ -12,10 +12,10 @@ SELECT THE PICTURES FROM SHOTWELL:
      picture-smaller.bsh /home/pictures/edit-pictures/${NEW_ALBUM}
 
 HOW TO CREATE A NEW ALBUM UNDER /home/data/proj/pub/photos/
-     declare NEW_ALBUM="SpecialCampRetreat"
-     cd /home/data/proj/pub/photos/
+     declare NEW_ALBUM="AkemiFamily"
+     cd /home/data/proj/publishing/pub/photos/
      mkdir --parents ${NEW_ALBUM} ${NEW_ALBUM}/images
-     cd /home/data/proj/pub/photos/${NEW_ALBUM}
+     cd /home/data/proj/publishing/pub/photos/${NEW_ALBUM}
      cp ../template/index.html .
      cp ../template/methods.js .
      cp ../template/classes.js .
@@ -24,10 +24,10 @@ HOW TO CREATE A NEW ALBUM UNDER /home/data/proj/pub/photos/
 
 NOW COPY THE SMALLER PICTURES INTO THE IMAGES
     cp /home/pictures/edit-pictures/${NEW_ALBUM}/smaller/* \
-       /home/data/proj/pub/photos/${NEW_ALBUM}/images/
+       /home/data/proj/publishing/pub/photos/${NEW_ALBUM}/images/
 
 FINALLY MODIFY
- cd   /home/data/proj/pub/photos/${NEW_ALBUM}/methods.js to include:
+ cd   /home/data/proj/publishing/pub/photos/${NEW_ALBUM} /methods.js to include:
 
         gedit methods.js &
             "IMG_1531.JPG",
