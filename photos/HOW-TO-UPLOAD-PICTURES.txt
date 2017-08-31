@@ -1,7 +1,7 @@
 
 HERE IS THE LINK:
-    http://kwegner7.github.io/pub/photos/SpecialCampRetreat
-    /home/data/proj/pub/photos/SpecialCampRetreat/index.html
+    http://kwegner7.github.io/pub/photos/AkemiFamily
+    /home/data/proj/pub/photos/AkemiFamily/index.html
 
 SELECT THE PICTURES FROM SHOTWELL:
      declare NEW_ALBUM="AkemiFamily"
@@ -36,11 +36,11 @@ FINALLY MODIFY
             "IMG_1534.JPG",
 
 NOW UPLOAD TO GITHUB
-    cd /home/data/proj/pub
+    cd /home/data/proj/publishing/pub
     git add ...
     git commit -m "Update Photos"
     git push origin gh-pages
-    cd /home/data/proj/pub
+
 
 
 
