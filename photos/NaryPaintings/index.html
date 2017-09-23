@@ -1,38 +1,29 @@
 <!DOCTYPE html>
 <html>
 
-<!-- 
-    Each node of the tree is a triple - html pages, styles, javascript:
-        index.html and sub-pages
-        styles.css
-        methods.js
-        classes.js
-        entry-points.js 
-        
-    Thus, styles are inherited along the well-ordered path.
-    Javascript methods and classes are common and available (possibly inherited)
-        along the well-ordered path.
+<!--
+    A series of <img> tags are inserted into the middle <div>, all except
+    one are hidden. Using getElementsByClassName() then setAttribute() the
+    hidden attribute is removed or set for each <img>. The attribute onclick
+    invokes a javascript method to advance or retreat the photos and refresh
+    the DOM.
 -->  
 
 <head>
   <title>Pictures</title>
   <base href=".">
 
-  <script src="../../methods.js"></script>
-  <script src="../methods.js"></script>
-  <script src="methods.js"></script>
-  
-  <script src="../../classes.js"></script>
-  <script src="../classes.js"></script>
-  <script src="classes.js"></script>
-  
-  <script src="../../entry-points.js"></script>
-  <script src="../entry-points.js"></script>
-  <script src="entry-points.js"></script>
-
+  /* pub */
   <link href=../../styles.css type=text/css rel=STYLESHEET>
+
+  /* photos */
   <link href=../styles.css type=text/css rel=STYLESHEET>
-  <link href=styles.css type=text/css rel=STYLESHEET>
+  <script src="../Pictures.js"></script>
+  <script src="../Doc.js"></script>    
+  <script src="../entry-points.js"></script>
+
+  /* child class virtual methods */
+  <script src="Pictures.js"></script>
       
   <style type=text/css>
   </style>
@@ -45,10 +36,10 @@
         <div class=frame-tall1>
             <h1 onclick="prevPhoto();">&#60;&#60;</h1>
         </div>
-        <h3 class=frame-tall2 id=page>insert text here</h3>
+        <h3 class=frame-tall2 id=page>insert text showing page here</h3>
     </div>
 
-    <div id=frame-photo style="float:left;">insert images here</div>
+    <div id=frame-photo style="float:left;">series of img tags here</div>
 
     <div class=frame-tall style="float:left;">
         <div class=frame-tall1>

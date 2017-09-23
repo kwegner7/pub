@@ -1,66 +1,54 @@
 <!DOCTYPE html>
 <html>
 
-<!--
-    A series of <img> tags are inserted into the middle <div>, all except
-    one are hidden. Using getElementsByClassName() then setAttribute() the
-    hidden attribute is removed or set for each <img>. The attribute onclick
-    invokes a javascript method to advance or retreat the photos and refresh
-    the DOM.
+<!-- 
+    Each node of the tree is a triple - html pages, styles, javascript:
+        index.html and sub-pages
+        styles.css
+        methods.js
+        classes.js
+        entry-points.js 
+        
+    Thus, styles are inherited along the well-ordered path.
+    Javascript methods and classes are common and available (possibly inherited)
+        along the well-ordered path.
 -->  
 
 <head>
   <title>Pictures</title>
   <base href=".">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-  $(document).ready(function(){
-      $("button").dblclick(function(){
-          $("#download").hide();
-          $("div.frame-tall1").toggle();
-      }); 
-      $("div#frame-photo").mouseenter(function(){
-          alert("You entered the frame!");
-      });
-      $("h1#prev").dblclick(function(){
-          prevPhoto();
-      });
-  });
-  </script>
-
+  <script src="../../methods.js"></script>
+  <script src="../methods.js"></script>
+  <script src="methods.js"></script>
+  
+  <script src="../../classes.js"></script>
+  <script src="../classes.js"></script>
+  <script src="classes.js"></script>
+  
+  <script src="../../entry-points.js"></script>
+  <script src="../entry-points.js"></script>
+  <script src="entry-points.js"></script>
 
   <link href=../../styles.css type=text/css rel=STYLESHEET>
-
   <link href=../styles.css type=text/css rel=STYLESHEET>
-  <script src="../Pictures.js"></script>
-  <script src="../Doc.js"></script>    
-  <script src="../entry-points.js"></script>
-
-  <script src="Pictures.js"></script>
+  <link href=styles.css type=text/css rel=STYLESHEET>
       
   <style type=text/css>
   </style>
 </head>
 
 <body onload="initialize()">
-
-<p>If you click on me, I will disappear.</p>
-<p>Click me away!</p>
-<p>Click me too!</p>
-
-<button>Click me</button>
-
 <div id="outermost-container">
 
     <div class=frame-tall style="float:left;">
         <div class=frame-tall1>
-            <h1 id=prev>&#60;&#60;</h1>
+            <h1 onclick="prevPhoto();">&#60;&#60;</h1>
         </div>
-        <h3 class=frame-tall2 id=page>insert text showing page here</h3>
+        <h3 class=frame-tall2 id=page>insert text here</h3>
     </div>
 
-    <div id=frame-photo style="float:left;">series of img tags here</div>
+    <div id=frame-photo style="float:left;">insert images here</div>
 
     <div class=frame-tall style="float:left;">
         <div class=frame-tall1>
