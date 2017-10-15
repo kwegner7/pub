@@ -4,20 +4,10 @@
 *******************************************************************************/
 var doc = new Doc(); /* this is static */
 
-function nextPhoto()
-{
-    doc.photos.advancePhoto();
-    doc.refreshDomElements();
-} 
-
-function prevPhoto()
-{
-    doc.photos.retreatPhoto();
-    doc.refreshDomElements();
-} 
-
 function initialize() { 
 	doc.constructDoc();
+    $("img.all-images").hide();   
+    $("img:nth-of-type(1)").show();   
     doc.refreshDomElements();
     /* window.alert("Photos Have Been Loaded"); */
 } 

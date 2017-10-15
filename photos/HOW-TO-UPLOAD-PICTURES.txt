@@ -1,3 +1,15 @@
+------------------------------
+HOW TO PUBLISH A SET OF PHOTOS
+------------------------------ 
+  create-photo-album.bsh
+
+  gedit /home/data/proj/publishing/pub/photos/INSTRUCTIONS.txt &
+  cd /home/data/proj/publishing/pub && git status
+  cd /home/data/proj/publishing/pub && git push origin gh-pages
+
+  http://kwegner7.github.io/pub/photos/TripToHyannis2017
+  /home/data/proj/publishing/pub/photos/TripToHyannis2017/index.html
+
 
 HERE IS THE LINK:
     http://kwegner7.github.io/pub/photos/AkemiFamily

@@ -1,0 +1,27 @@
+ 
+
+Pictures of TPN-22 and GCA-2000
+perl
+bash
+python
+C++
+Java
+c#
+
+jQuery
+javascript
+GPS SRS
+GPS User Manual
+My Unit Test idea
+
+1) Systems Engineering/Requirements
+2) Object Oriented Design/Implementation
+3) Unit Test/Scenario Test
+
+photos - show code - show picture of Nary
+
+vxWorks - realtime linux - c++ mutex, take/give, thread
+
+tuple, deleted, default, auto, override, 
+
+gitHub, heroku/ruby
