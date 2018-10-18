@@ -2,7 +2,7 @@ BEGIN:VCALENDAR
 CALSCALE:GREGORIAN
 PRODID:-//Ximian//NONSGML Evolution Calendar//EN
 VERSION:2.0
-X-EVOLUTION-DATA-REVISION:2018-10-16T01:05:35.012584Z(9)
+X-EVOLUTION-DATA-REVISION:2018-10-18T00:32:16.570496Z(30)
 BEGIN:VTIMEZONE
 TZID:America/Denver
 TZURL:http://tzurl.org/zoneinfo-outlook/America/Denver
@@ -12627,22 +12627,6 @@ RECURRENCE-ID;VALUE=DATE:20180121
 DESCRIPTION:\nJan 14 - Kurt\nJan 21 - Kurt\nJan 28 - Tiffany\n\n
 END:VEVENT
 BEGIN:VEVENT
-UID:0d09e99f67ae53f66deb39ceb7bc0e1ecf39314b
-DTSTAMP:20180110T191242Z
-DTSTART;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
- 20181230
-DTEND;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
- 20181231
-SEQUENCE:3
-SUMMARY:KURT SUNDAY SCHOOL
-CLASS:PUBLIC
-TRANSP:TRANSPARENT
-CREATED:20180918T184842Z
-LAST-MODIFIED:20180918T184842Z
-RECURRENCE-ID;VALUE=DATE:20180121
-DESCRIPTION:\nJan 14 - Kurt\nJan 21 - Kurt\nJan 28 - Tiffany\n\n
-END:VEVENT
-BEGIN:VEVENT
 UID:7a5c3fad4b3f4e21a5028b24a2bd4d5158af37b1
 DTSTAMP:20180926T191418Z
 DTSTART;TZID=/freeassociation.sourceforge.net/America/Denver:
@@ -12755,37 +12739,6 @@ CREATED:20181013T222545Z
 LAST-MODIFIED:20181013T222600Z
 END:VEVENT
 BEGIN:VEVENT
-UID:f4bad6e4aabcc6cacc61db3bf1a203dcd93267df
-DTSTAMP:20181016T000109Z
-DTSTART;TZID=/freeassociation.sourceforge.net/America/Denver:
- 20190111T121000
-DTEND;TZID=/freeassociation.sourceforge.net/America/Denver:
- 20190111T131000
-SEQUENCE:2
-SUMMARY:lv DEN
-TRANSP:OPAQUE
-DESCRIPTION:Fri Jan 11 Denver → Jakarta\, Indonesia\nDEN → NRT\n12:10 
- PM Fri\, Jan 11 – 4:30 PM Sat\, Jan 12\nANA All Nippon Airways Flight 
- 7033\nOvernight Flight\nOperated by United Airlines\n12h 20m\, 5770 
- miles\nDepart: Denver Intl Airport (DEN)\, Denver\, CO\nArrive: Narita 
- Intl Airport (NRT)\, Tokyo\, Japan\nEconomy Class - Boeing 787-8\n1h 25m 
- layover in Tokyo\nNRT → CGK\n5:55 PM – 11:55 PM\nANA All Nippon 
- Airways Flight 835\n8h \, 3626 miles\nDepart: Narita Intl Airport (NRT)\, 
- Tokyo\, Japan\nArrive: Soekarno-Hatta Intl Airport (CGK)\, Jakarta\, 
- Indonesia\nEconomy Class - Boeing 787-8\nSun Jan 27 Jakarta\, Indonesia 
- → Denver\nCGK → NRT\n6:20 AM – 3:40 PM\nANA All Nippon Airways 
- Flight 836\n7h 20m\, 3626 miles\nDepart: Soekarno-Hatta Intl Airport 
- (CGK)\, Jakarta\, Indonesia\nArrive: Narita Intl Airport (NRT)\, Tokyo\, 
- Japan\nEconomy Class - Boeing 787-8\n2h 35m layover in Tokyo\nNRT → 
- DEN\n6:15 PM – 12:40 PM\nANA All Nippon Airways Flight 7032\nOperated 
- by United Airlines\n10h 25m\, 5770 miles\nDepart: Narita Intl Airport 
- (NRT)\, Tokyo\, Japan\nArrive: Denver Intl Airport (DEN)\, Denver\, 
- CO\nEconomy Class - Boeing 787-8\n
-CLASS:PUBLIC
-CREATED:20181016T005804Z
-LAST-MODIFIED:20181016T005804Z
-END:VEVENT
-BEGIN:VEVENT
 UID:4acb729f2c75e1f9dccb33654262d739567e04bc
 DTSTAMP:20181016T000109Z
 DTSTART;TZID=/freeassociation.sourceforge.net/America/Denver:
@@ -12826,18 +12779,233 @@ CREATED:20181016T010404Z
 LAST-MODIFIED:20181016T010441Z
 END:VEVENT
 BEGIN:VEVENT
-UID:30bdd850fe20eb518d471eef253bfb76b73c071f
-DTSTAMP:20181016T000109Z
-DTSTART;TZID=/freeassociation.sourceforge.net/America/Denver:
- 20190112T235500
-DTEND;TZID=/freeassociation.sourceforge.net/America/Denver:
- 20190112T235600
-SEQUENCE:4
-SUMMARY:ar Jakarta
+UID:97cf0efced2d7f24a3dce2d7ac944cda3361867d
+DTSTAMP:20181017T012546Z
+DTSTART;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20181228T103000
+DTEND;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20181228T103000
+SEQUENCE:5
+SUMMARY:Lv Seattle
 TRANSP:OPAQUE
-DESCRIPTION:NRT → CGK\n5:55 PM – 11:55 PM
 CLASS:PUBLIC
-CREATED:20181016T005956Z
-LAST-MODIFIED:20181016T010535Z
+CREATED:20181018T000418Z
+LAST-MODIFIED:20181018T000550Z
+DESCRIPTION:Fri Dec 28 Denver → Jakarta\, Indonesia\n\nDEN → SEA 7:00 
+ AM – 9:20 AM\nDelta Air Lines Flight 2681\n3h 20m\, 1022 miles\nDepart: 
+ Denver Intl Airport (DEN)\, Denver\, CO\nArrive: Seattle-Tacoma Intl 
+ Airport (SEA)\, Seattle\, WA\n1h 10m layover in Seattle\n\nActual room 
+ may vary.\nSEA → ICN\n10:30 AM Fri\, Dec 28 – 3:20 PM Sat\, Dec 
+ 29\n------------------------------------------------
+END:VEVENT
+BEGIN:VEVENT
+UID:e004cd2e41a25af62e6360ed85b15d83fdb4aea8
+DTSTAMP:20181017T012546Z
+DTSTART;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20181228T092000
+DTEND;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20181228T092000
+SEQUENCE:4
+SUMMARY:Ar Seattle
+TRANSP:OPAQUE
+CLASS:PUBLIC
+CREATED:20181018T000310Z
+LAST-MODIFIED:20181018T000618Z
+DESCRIPTION:Fri Dec 28 Denver → Jakarta\, Indonesia\n\nDEN → SEA 7:00 
+ AM – 9:20 AM\nDelta Air Lines Flight 2681\n3h 20m\, 1022 miles\nDepart: 
+ Denver Intl Airport (DEN)\, Denver\, CO\nArrive: Seattle-Tacoma Intl 
+ Airport (SEA)\, Seattle\, WA\n1h 10m layover in Seattle\n\nActual room 
+ may vary.\nSEA → ICN\n10:30 AM Fri\, Dec 28 – 3:20 PM Sat\, Dec 
+ 29\n------------------------------------------------
+END:VEVENT
+BEGIN:VEVENT
+UID:02a580e8f5873bc91fd26c92e44284ad871b11c5
+DTSTAMP:20181017T012546Z
+DTSTART;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20181228T070000
+DTEND;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20181228T092000
+SEQUENCE:3
+SUMMARY:Lv Denver
+TRANSP:OPAQUE
+CLASS:PUBLIC
+CREATED:20181017T012707Z
+LAST-MODIFIED:20181018T000621Z
+DESCRIPTION:Fri Dec 28 Denver → Jakarta\, Indonesia\n\nDEN → SEA 7:00 
+ AM – 9:20 AM\nDelta Air Lines Flight 2681\n3h 20m\, 1022 miles\nDepart: 
+ Denver Intl Airport (DEN)\, Denver\, CO\nArrive: Seattle-Tacoma Intl 
+ Airport (SEA)\, Seattle\, WA\n1h 10m layover in Seattle\n\nActual room 
+ may vary.\nSEA → ICN\n10:30 AM Fri\, Dec 28 – 3:20 PM Sat\, Dec 
+ 29\n------------------------------------------------
+END:VEVENT
+BEGIN:VEVENT
+UID:be9867122f5da51c654abaa02014c284938d09fc
+DTSTAMP:20181017T012546Z
+DTSTART;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20181229T152000
+DTEND;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20181229T152000
+SEQUENCE:6
+SUMMARY:Ar Seoul
+TRANSP:OPAQUE
+CLASS:PUBLIC
+CREATED:20181018T000605Z
+LAST-MODIFIED:20181018T000713Z
+DESCRIPTION:Fri Dec 28 Denver → Jakarta\, Indonesia\n\nDEN → SEA 7:00 
+ AM – 9:20 AM\nDelta Air Lines Flight 2681\n3h 20m\, 1022 miles\nDepart: 
+ Denver Intl Airport (DEN)\, Denver\, CO\nArrive: Seattle-Tacoma Intl 
+ Airport (SEA)\, Seattle\, WA\n1h 10m layover in Seattle\n\nActual room 
+ may vary.\nSEA → ICN\n10:30 AM Fri\, Dec 28 – 3:20 PM Sat\, Dec 
+ 29\n------------------------------------------------
+END:VEVENT
+BEGIN:VEVENT
+UID:672cc0c0835a8ea237458be538acf4757fef8023
+DTSTAMP:20181017T012546Z
+DTSTART;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20181230T150500
+DTEND;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20181230T152000
+SEQUENCE:7
+SUMMARY:Lv Seoul
+TRANSP:OPAQUE
+CLASS:PUBLIC
+CREATED:20181018T001140Z
+LAST-MODIFIED:20181018T001443Z
+DESCRIPTION:Fri Dec 28 Denver → Jakarta\, Indonesia\n\nDEN → SEA 7:00 
+ AM – 9:20 AM\nDelta Air Lines Flight 2681\n3h 20m\, 1022 miles\nDepart: 
+ Denver Intl Airport (DEN)\, Denver\, CO\nArrive: Seattle-Tacoma Intl 
+ Airport (SEA)\, Seattle\, WA\n1h 10m layover in Seattle\n\nActual room 
+ may vary.\nSEA → ICN\n10:30 AM Fri\, Dec 28 – 3:20 PM Sat\, Dec 
+ 29\n------------------------------------------------\nICN → CGK\n3:05 
+ PM – 8:15 PM
+END:VEVENT
+BEGIN:VEVENT
+UID:0503e873806bad274b21161c4750244a07894e40
+DTSTAMP:20181017T012546Z
+DTSTART;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20181230T201500
+DTEND;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20181230T203000
+SEQUENCE:8
+SUMMARY:Ar Jakarta
+TRANSP:OPAQUE
+CLASS:PUBLIC
+CREATED:20181018T001455Z
+LAST-MODIFIED:20181018T001608Z
+DESCRIPTION:Fri Dec 28 Denver → Jakarta\, Indonesia\n\nDEN → SEA 7:00 
+ AM – 9:20 AM\nDelta Air Lines Flight 2681\n3h 20m\, 1022 miles\nDepart: 
+ Denver Intl Airport (DEN)\, Denver\, CO\nArrive: Seattle-Tacoma Intl 
+ Airport (SEA)\, Seattle\, WA\n1h 10m layover in Seattle\n\nActual room 
+ may vary.\nSEA → ICN\n10:30 AM Fri\, Dec 28 – 3:20 PM Sat\, Dec 
+ 29\n------------------------------------------------\nICN → CGK\n3:05 
+ PM – 8:15 PM
+END:VEVENT
+BEGIN:VEVENT
+UID:50b00849d8192dd5446f73cfb3645a3f2ca0f142
+DTSTAMP:20181017T012546Z
+DTSTART;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20190116T215000
+DTEND;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20190116T215100
+SEQUENCE:5
+SUMMARY:Lv Jakarta
+TRANSP:OPAQUE
+CLASS:PUBLIC
+CREATED:20181017T012815Z
+LAST-MODIFIED:20181018T002022Z
+DESCRIPTION:CGK → ICN\n9:50 PM Wed\, Jan 16 – 6:50 AM Thu\, Jan 17
+END:VEVENT
+BEGIN:VEVENT
+UID:013d6a2ced263eb7bcde2aac4f64e6cc8cc7be10
+DTSTAMP:20181017T012546Z
+DTSTART;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20190117T065000
+DTEND;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20190117T070000
+SEQUENCE:6
+SUMMARY:Ar Seoul
+TRANSP:OPAQUE
+CLASS:PUBLIC
+CREATED:20181018T002030Z
+LAST-MODIFIED:20181018T002139Z
+DESCRIPTION:CGK → ICN\n9:50 PM Wed\, Jan 16 – 6:50 AM Thu\, Jan 17
+END:VEVENT
+BEGIN:VEVENT
+UID:99efe280f903291faae4af1598bdfcba0b97dc08
+DTSTAMP:20181017T012546Z
+DTSTART;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20190117T200500
+DTEND;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20190117T201500
+SEQUENCE:7
+SUMMARY:Lv Seoul
+TRANSP:OPAQUE
+CLASS:PUBLIC
+CREATED:20181018T002147Z
+LAST-MODIFIED:20181018T002412Z
+DESCRIPTION:CGK → ICN\n9:50 PM Wed\, Jan 16 – 6:50 AM Thu\, Jan 
+ 17\nICN → SEA\n8:05 PM – 1:48 PM\nDelta Air Lines Flight 1
+END:VEVENT
+BEGIN:VEVENT
+UID:294ef2c951ffd2083cc8cae359a8ee818675d736
+DTSTAMP:20181017T012546Z
+DTSTART;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20190117T134800
+DTEND;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20190117T201500
+SEQUENCE:8
+SUMMARY:Ar Seattle
+TRANSP:OPAQUE
+CLASS:PUBLIC
+CREATED:20181018T002420Z
+LAST-MODIFIED:20181018T002454Z
+DESCRIPTION:CGK → ICN\n9:50 PM Wed\, Jan 16 – 6:50 AM Thu\, Jan 
+ 17\nICN → SEA\n8:05 PM – 1:48 PM\nDelta Air Lines Flight 1
+END:VEVENT
+BEGIN:VEVENT
+UID:fcda1c910384d8253ef02c7aee723604e2c5ac6b
+DTSTAMP:20181017T012546Z
+DTSTART;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20190117T151500
+DTEND;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20190117T201500
+SEQUENCE:9
+SUMMARY:Lv Seattle
+TRANSP:OPAQUE
+CLASS:PUBLIC
+CREATED:20181018T002547Z
+LAST-MODIFIED:20181018T002905Z
+DESCRIPTION:CGK → ICN\n9:50 PM Wed\, Jan 16 – 6:50 AM Thu\, Jan 
+ 17\nICN → SEA\n8:05 PM – 1:48 PM\nDelta Air Lines Flight 1\n\nSEA → 
+ DEN\n3:15 PM – 6:55 PM
+END:VEVENT
+BEGIN:VEVENT
+UID:b3fe7945f13ede2b8ed44366c66581b38790f7a8
+DTSTAMP:20181017T012546Z
+DTSTART;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20190117T185500
+DTEND;VALUE=DATE;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20190117T201500
+SEQUENCE:8
+SUMMARY:Ar Denver
+TRANSP:OPAQUE
+CLASS:PUBLIC
+CREATED:20181018T002915Z
+LAST-MODIFIED:20181018T003046Z
+DESCRIPTION:CGK → ICN\n9:50 PM Wed\, Jan 16 – 6:50 AM Thu\, Jan 
+ 17\nICN → SEA\n8:05 PM – 1:48 PM\nDelta Air Lines Flight 1\n\nSEA → 
+ DEN\n3:15 PM – 6:55 PM
+END:VEVENT
+BEGIN:VEVENT
+UID:3498796dd8c8eda742336dc482e0a3390bc0494e
+DTSTAMP:20181017T235245Z
+DTSTART;VALUE=DATE:20181231
+DTEND;VALUE=DATE:20190105
+SEQUENCE:2
+SUMMARY:MAKASSAR/SURABAYA
+TRANSP:OPAQUE
+CLASS:PUBLIC
+CREATED:20181018T003216Z
+LAST-MODIFIED:20181018T003216Z
 END:VEVENT
 END:VCALENDAR
