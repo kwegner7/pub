@@ -1,0 +1,46 @@
+/*
+    ELEMENT SELECTORS { STYLE PROPERTIES }
+*/
+
+/* select all elements to have no margin between
+  * {margin:0;} 
+ */
+
+        .main
+        {
+            font-family:Verdana, Geneva, sans-serif;
+            font-size:20px;
+            font-weight:bold;
+            color:green;
+            text-align:center;
+            margin-left:0px;
+            text-decoration:none;
+            line-height:150%
+        }
+
+        .heading
+        {
+             font-family:Verdana, Geneva, sans-serif;
+             font-size:18px;
+             font-weight:bold;
+             color:black;
+             text-align:left;
+             margin-left:0px;
+             text-decoration:none;
+             line-height:150%;
+        }
+
+        .goto
+        {
+             font-family:Verdana, Geneva, sans-serif;
+             font-size:18px;
+             font-weight:bold;
+             color:blue;
+             text-align:left;
+             margin-left:0px;
+             text-decoration:underline;
+             line-height:150%;
+             padding-left:20pt;
+        }
+
+ 
