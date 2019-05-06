@@ -1,46 +1,59 @@
 /*
     ELEMENT SELECTORS { STYLE PROPERTIES }
+    . refers to a class
+    # refers to a unique id
+
+    See /home/data/proj/git/levi
 */
 
-/* select all elements to have no margin between
+/* select all elements to have no margin between */
   * {margin:0;} 
- */
 
-        .main
-        {
-            font-family:Verdana, Geneva, sans-serif;
-            font-size:20px;
-            font-weight:bold;
-            color:green;
-            text-align:center;
-            margin-left:0px;
-            text-decoration:none;
-            line-height:150%
-        }
+  p.main
+  {
+      font-family:Verdana, Geneva, sans-serif;
+      font-size:20px;
+      font-weight:bold;
+      color:green;
+      text-align:center;
+      margin-left:0px;
+      text-decoration:none;
+      line-height:150%
+  }
 
-        .heading
-        {
-             font-family:Verdana, Geneva, sans-serif;
-             font-size:18px;
-             font-weight:bold;
-             color:black;
-             text-align:left;
-             margin-left:0px;
-             text-decoration:none;
-             line-height:150%;
-        }
+  p.heading
+  {
+       font-family:Verdana, Geneva, sans-serif;
+       font-size:18px;
+       font-weight:bold;
+       color:black;
+       text-align:left;
+       margin-left:0px;
+       text-decoration:none;
+       line-height:150%;
+  }
 
-        .goto
-        {
-             font-family:Verdana, Geneva, sans-serif;
-             font-size:18px;
-             font-weight:bold;
-             color:blue;
-             text-align:left;
-             margin-left:0px;
-             text-decoration:underline;
-             line-height:150%;
-             padding-left:20pt;
-        }
+  a.goto
+  {
+       font-family:Verdana, Geneva, sans-serif;
+       font-size:18px;
+       font-weight:bold;
+       color:blue;
+       text-align:left;
+       margin-left:0px;
+       text-decoration:underline;
+       line-height:150%;
+       padding-left:20pt;
+  }
 
+    /**************************************************************
+    * This specifies the bold black border
+    **************************************************************/
+    div.container-with-border {
+        margin: 10px auto; /* outermost white space */
+        border: 20px solid black; /* then thick frame border */
+        padding: 30px; /* this is background surrounding text */
+        width: 450px;  /* within the padding */
+        background-color:white;
+    }
  
