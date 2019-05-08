@@ -53,7 +53,8 @@
         margin: 10px auto; /* outermost white space */
         border: 20px solid black; /* then thick frame border */
         padding: 30px; /* this is background surrounding text */
-        width: 450px;  /* within the padding */
+        /* width: 450px;   within the padding */
+        width:50%;
         background-color:white;
     }
  
