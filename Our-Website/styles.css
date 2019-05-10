@@ -6,13 +6,17 @@
     See /home/data/proj/git/levi
 */
 
-/* select all elements to have no margin between */
-  * {margin:0;} 
+  * {margin:0;} /* select all elements to have no margin between */
+
+  html
+  {
+      font-size:large;
+  }
 
   p.main
   {
       font-family:Verdana, Geneva, sans-serif;
-      font-size:20px;
+      font-size:100%;
       font-weight:bold;
       color:green;
       text-align:center;
@@ -24,7 +28,7 @@
   p.heading
   {
        font-family:Verdana, Geneva, sans-serif;
-       font-size:18px;
+       font-size:100%;
        font-weight:bold;
        color:black;
        text-align:left;
@@ -36,14 +40,14 @@
   a.goto
   {
        font-family:Verdana, Geneva, sans-serif;
-       font-size:18px;
+       font-size:90%;
        font-weight:bold;
        color:blue;
        text-align:left;
-       margin-left:0px;
+       margin-left:3%;
        text-decoration:underline;
        line-height:150%;
-       padding-left:20pt;
+       padding-left:0pt;
   }
 
     /**************************************************************
