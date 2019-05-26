@@ -1,5 +1,6 @@
 /*
     ELEMENT SELECTORS { STYLE PROPERTIES }
+
     . refers to a class
     # refers to a unique id
 
@@ -13,7 +14,7 @@
       font-size:large;
   }
 
-  p.main
+  h1.title
   {
       font-family:Verdana, Geneva, sans-serif;
       font-size:100%;
@@ -25,7 +26,7 @@
       line-height:150%
   }
 
-  p.heading
+  h2.heading
   {
        font-family:Verdana, Geneva, sans-serif;
        font-size:100%;
@@ -51,14 +52,43 @@
   }
 
     /**************************************************************
+    * You can create your own colors here and give each a name
+    **************************************************************/
+    .aqua         { background-color:#00ffff; } 
+    .black        { background-color:#000000; } 
+    .blue         { background-color:#0000ff; }
+    .blue2        { background-color:#DAF4F0; }
+    .fuchsia      { background-color:#ff00ff; } 
+    .gray         { background-color:#808080; }
+    .green        { background-color:#008000; }
+    .lime         { background-color:#00ff00; } 
+    .maroon       { background-color:#800000; }
+    .navy         { background-color:#000080; }
+    .olive        { background-color:#808000; }
+    .orange       { background-color:#ffA500; }
+    .orange2      { background-color:#FFDAB9; }
+    .pink         { background-color:#FFE5F9; }
+    .purple       { background-color:#800080; }
+    .purple3      { background-color:#E6E6FA; }
+    .red          { background-color:#ff0000; }
+    .silver       { background-color:#c0c0c0; }
+    .teal         { background-color:#008080; }
+    .white        { background-color:#ffffff; }
+    .yellow       { background-color:#ffff00; }
+    .pale-blue    { background-color:#CAF7F5; }
+    .pale-green   { background-color:#CCFFCC; }
+    .pale-orange  { background-color:#FFE5C0; }
+    .pale-purple  { background-color:#D7CFFF; }
+    .pale-yellow  { background-color:#F9FFE6; }
+
+    /**************************************************************
     * This specifies the bold black border
     **************************************************************/
     div.container-with-border {
-        margin: 10px auto; /* outermost white space */
-        border: 20px solid black; /* then thick frame border */
-        padding: 30px; /* this is background surrounding text */
-        /* width: 450px;   within the padding */
-        width:50%;
+        margin: 1em auto; /* outermost white space between containers */
+        border: 1.2em solid black; /* then thick frame border */
+        padding: 1.3em; /* this is background surrounding text */
+        width:40%;
         background-color:white;
     }
  

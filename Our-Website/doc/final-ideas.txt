@@ -1,0 +1,24 @@
+Section 6.01 Woodland Park House
+It should say "if both Rayna and Levi and all of their
+               descendants are deceased ..."
+
+Section 6.02 Hyannis House
+This is the Wegner family house, we would like this to be:
+    Davida --> her descendants Ruby and Lily
+           --> pro rata Heather and Shawnine or their descendants
+           --> Article 10 
+
+Section 10.02 Davida
+We would like this to be:
+    Davida --> pro rata Ruby, Lily, Heather, Shawnine or their descendants
+           --> Article 11
+
+Section 10.03 Rayna
+Should be the same as Section 6.01, that is:
+    Rayna --> her descendants --> Levi --> his descendants --> Article 11
+
+Section 10.04 Levi
+Same idea as Rayna
+
+
+
