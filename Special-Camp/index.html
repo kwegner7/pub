@@ -1,42 +1,56 @@
 <!DOCTYPE HTML>
-
-<!--
-https://kwegner7.github.io/pub/Special-Camp/index.html
-/home/data/proj/publishing/pub/Special-Camp/index.html
--->
-
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Special Camp</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+
+    html
+    {
+      font-size:large;
+    }
+
+    h2
+    {
+      font-family:Verdana, Geneva, sans-serif;
+      font-size:80%;
+      font-weight:bold;
+      text-align:center;
+    }
+
+  </style>
 </head>
 
 <body>
-<SCRIPT>
-function passWord() {
-  var pass1 = prompt('User Name','');
-  var pass2 = prompt('Password','');
-  while (2 < 3) {
-    if (pass1.toLowerCase() == "special"
-    &&  pass2.toLowerCase() == "camp") {
+
+<h2>
+  <br><br>
+  User Name
+    <input type="text" name="user" value="" id="IdUser">
+  &nbsp;&nbsp;
+  Password
+    <input type="text" name="pwd" value="" id="IdPass">
+  &nbsp;&nbsp;
+  <button onclick="check()">Submit</button>
+</h2>
+
+<script>
+  function check() {
+    var user = document.getElementById("IdUser").value;
+    var pwd = document.getElementById("IdPass").value;
+
+    if (user.toLowerCase() == "special"
+    &&  pwd.toLowerCase() == "camp")
+    {
       window.open('https://kwegner7.github.io/pub/Special-Camp/special-camp.html', "_self");
-      // window.open('/home/data/proj/publishing/pub/Special-Camp/special-camp.html');
-      break;
+      // window.open('./special-camp.html', "_self");
     }
-    else {
+    else
+    {
+      alert("Login Incorrect");
       history.go(-1);
-      break;
     }
+    return " ";
   }
-  return " ";
-}
-</SCRIPT>
-
-<CENTER>
-<FORM>
-<input type="button" value="SPECIAL CAMP" onClick="passWord()">
-</FORM>
-</CENTER>
-
+</script>
 </body>
