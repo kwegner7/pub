@@ -1,0 +1,6 @@
+ Download:
+    special-camp-meds.pdf
+    special-camp-meds(6).pdf
+
+Move the 7 pdfs to
+    /home/data/proj/publishing/pub/Special-Camp/doc/pdf/latest and 2019-06-10
