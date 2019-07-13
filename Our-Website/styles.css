@@ -26,17 +26,22 @@
       line-height:150%
   }
 
-  h2.heading
+  h2.heading, h2.heading-left, h2.heading-center, h3.heading-left, h3.heading-center
   {
        font-family:Verdana, Geneva, sans-serif;
        font-size:100%;
        font-weight:bold;
        color:black;
-       text-align:left;
        margin-left:0px;
        text-decoration:none;
        line-height:150%;
   }
+
+  h2.heading-left { text-align:left; }
+  h2.heading-center { text-align:center; }
+
+  h3.heading-left { text-align:left; color:red;}
+  h3.heading-center { text-align:center; color:red;}
 
   a.goto
   {
