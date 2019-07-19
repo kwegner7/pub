@@ -1,0 +1,48 @@
+ Download:
+    special-camp-meds.pdf
+    special-camp-meds(6).pdf
+
+Move the 7 pdfs to
+    /home/data/proj/publishing/pub/Special-Camp/doc/pdf/latest and 2019-06-10
+
+Modify date in special-camp.html
+
+https://kwegner7.github.io/pub/Special-Camp/
+
+
+Move the 25 guardian
+
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=516&usr=special&pwd=camp    Abasolo,Jerry    
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=517&usr=special&pwd=camp    Chen,Jonathan    
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=556&usr=special&pwd=camp    Chien,Stephen    
+
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=553&usr=special&pwd=camp    Chua,Hannah    
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=519&usr=special&pwd=camp    Conville,Mariko    
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=624&usr=special&pwd=camp    Eugenio,Benjamin    
+
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=522&usr=special&pwd=camp    Gong,Richard    
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=523&usr=special&pwd=camp    Hata,Randall    
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=551&usr=special&pwd=camp    Kanazawa,Curtis    
+
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=528&usr=special&pwd=camp    Kanemori,David    
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=612&usr=special&pwd=camp    Mar,Jodi    
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=533&usr=special&pwd=camp    Miyashiro,Cindy    
+
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=535&usr=special&pwd=camp    Mock,Vanessa    
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=536&usr=special&pwd=camp    Nagao,Lacey    
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=537&usr=special&pwd=camp    Nakagaki,Christine    
+
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=538&usr=special&pwd=camp    Narahara,Craig    
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=539&usr=special&pwd=camp    Nishio,Marc    
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=540&usr=special&pwd=camp    Ouye,Jamie    
+
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=541&usr=special&pwd=camp    Peeler,Jennifer    
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=542&usr=special&pwd=camp    Refuerzo,Melling    
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=544&usr=special&pwd=camp    Takamune,Lisa    
+
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=545&usr=special&pwd=camp    Tani,GlennRicky    
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=587&usr=special&pwd=camp    Verzani,Amanda    
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=583&usr=special&pwd=camp    Visitacion,Dana    
+
+http://stark-retreat-1229.herokuapp.com/meds/printform?formtype=guardian-signature-sheet&camperid=559&usr=special&pwd=camp    Wang,Rebecca    
+
