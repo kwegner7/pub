@@ -1,10 +1,12 @@
 /*
-    Format is: ELEMENT SELECTORS { STYLE PROPERTIES }
-        . refers to a class
-        # refers to a unique id
+      Format is: ELEMENT SELECTORS { STYLE PROPERTIES }
+    For example: h1,h2 { font-size:large; }
+
+    . refers to a class
+    # refers to a unique id
 */
 
-  * {margin:0;} /* select all elements to have no margin between */
+  * {margin:0;} /* select all elements to have no margin between them */
 
   html
   {
@@ -20,11 +22,9 @@
       text-align:center;
       margin-left:0px;
       text-decoration:none;
-      line-height:150%
   }
 
-  h2.heading-left, h2.heading-center,
-  h3.heading-left, h3.heading-center
+  h2, h3
   {
        font-family:Verdana, Geneva, sans-serif;
        font-size:100%;
@@ -32,14 +32,13 @@
        color:black;
        margin-left:0px;
        text-decoration:none;
-       line-height:150%;
   }
 
   h2.heading-left   { text-align:left; }
   h2.heading-center { text-align:center; }
 
-  h3.heading-left   { text-align:left; color:red; }
-  h3.heading-center { text-align:center; color:red; }
+  h3.heading-left   { text-align:left; color:red; font-size:90%; }
+  h3.heading-center { text-align:center; color:red; font-size:90%; }
 
   a.goto-left, a.goto-center
   {
@@ -49,13 +48,30 @@
        color:blue;
        margin-left:3%;
        text-decoration:underline;
-       line-height:150%;
        padding-left:0pt;
+       display:block; 
   }
 
   a.goto-left   { text-align:left; }
-  a.goto-center { margin:auto; text-align:center; display:block; }
+  a.goto-center { margin:auto; text-align:center; }
 
+  img, video {
+    max-width: 100%; /* max-height: 100%; */
+    height: auto;
+  }
+
+  /**************************************************************
+  * This specifies the bold black border
+  **************************************************************/
+  div.container-with-border {
+      margin: 1em auto; /* outermost white space between containers */
+      border: 1.2em solid black; /* then thick frame border */
+      padding: 1.3em; /* this is background surrounding text */
+      width: 40%;
+      background-color: white;
+      line-height: 200%;
+  }
+ 
   /**************************************************************
   * You can create your own colors here and give each a name
   **************************************************************/
@@ -86,14 +102,3 @@
   .pale-purple  { background-color:#D7CFFF; }
   .pale-yellow  { background-color:#F9FFE6; }
 
-  /**************************************************************
-  * This specifies the bold black border
-  **************************************************************/
-  div.container-with-border {
-      margin: 1em auto; /* outermost white space between containers */
-      border: 1.2em solid black; /* then thick frame border */
-      padding: 1.3em; /* this is background surrounding text */
-      width:40%;
-      background-color:white;
-  }
- 
