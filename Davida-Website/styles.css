@@ -9,51 +9,48 @@
   * {margin:0;} /* select all elements to have no margin between them */
 
   body {
-      font-family:Verdana, Geneva, sans-serif;
-      padding:10em, 2em, 10em, 2em;
+    font-family:Verdana, Geneva, sans-serif;
+    width: auto;
+    background-color: white;
+    border: 2em solid white;
   }
 
   html {
-      font-size:large;
+    font-size:large;
   }
 
-  h1.title  {
-
-      font-size:100%;
-      font-weight:bold;
-      color:green;
-      text-align:center;
-      margin-left:0px;
-      text-decoration:none;
+  h1, h1.title {
+    font-size:100%;
+    font-weight:bold;
+    color:green;
+    text-align:center;
+    text-decoration:none;
   }
 
-  h2, h3  {
-       font-size:100%;
-       font-weight:bold;
-       color:black;
-       margin-left:0px;
-       text-decoration:none;
+  h2, h3 {
+    font-size:100%;
+    font-weight:bold;
+    color:black;
+    text-decoration:none;
   }
 
-  h2.heading-left   { text-align:left; }
-  h2.heading-center { text-align:center; }
+  h2.heading, h2.heading-left { text-align:left;   }
+  h2.heading-center           { text-align:center; }
 
-  h3.heading-left   { text-align:left; color:red; font-size:90%; }
-  h3.heading-center { text-align:center; color:red; font-size:90%; }
+  h3.heading, h3.heading-left { text-align:left; color:red; font-size:90%;   }
+  h3.heading-center           { text-align:center; color:red; font-size:90%; }
 
-  a.goto-left, a.goto-center
-  {
-       font-size:90%;
-       font-weight:bold;
-       color:blue;
-       margin-left:3%;
-       text-decoration:underline;
-       padding-left:0pt;
-       display:block; 
+  a {
+     font-size:90%;
+     font-weight:bold;
+     color:blue;
+     margin-left:3%;
+     text-decoration:underline;
+     display:block; 
   }
 
-  a.goto-left   { text-align:left; }
-  a.goto-center { margin:auto; text-align:center; }
+  a.goto, a.goto-left { text-align:left; }
+  a.goto-center       { margin:auto; text-align:center; }
 
   img, video {
     max-width: 100%; /* max-height: 100%; */
@@ -67,7 +64,7 @@
   /**************************************************************
   * This specifies the bold black border
   **************************************************************/
-  div.container-with-border {
+  div.solid-border {
       margin: 1em auto; /* outermost white space between containers */
       border: 1.2em solid black; /* then thick frame border */
       padding: 1.3em; /* this is background surrounding text */
