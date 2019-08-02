@@ -68,10 +68,10 @@
   * This specifies the bold black border
   **************************************************************/
   div.solid-border {
-      margin: 1em auto; /* outermost white space between containers */
-      border: 1.2em solid black; /* then thick frame border */
-      padding: 1.3em; /* this is background surrounding text */
-      width: 90%;
+      margin: 3em auto; /* outermost white space between containers */
+      border: 1em solid black; /* then thick frame border */
+      padding: 1em; /* this is background surrounding text */
+      width: 100%;
       background-color: white;
       line-height: 200%;
   }
