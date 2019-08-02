@@ -15,7 +15,7 @@
     font-family:Verdana, Geneva, sans-serif;
     width: auto;
     background-color: white;
-    border: 2em solid white;
+    border: 1em solid white;
   }
 
   html {
@@ -71,7 +71,7 @@
       margin: 1em auto; /* outermost white space between containers */
       border: 1.2em solid black; /* then thick frame border */
       padding: 1.3em; /* this is background surrounding text */
-      width: 60%;
+      width: 90%;
       background-color: white;
       line-height: 200%;
   }
