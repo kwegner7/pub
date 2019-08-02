@@ -6,7 +6,10 @@
     # refers to a unique id
 */
 
-  * {margin:0;} /* select all elements to have no margin between them */
+  * {
+    margin:0; /* select all elements to have no margin between them */
+    box-sizing: border-box; /* padding and border included in total width/height */
+  }
 
   body {
     font-family:Verdana, Geneva, sans-serif;
@@ -53,7 +56,7 @@
   a.goto-center       { margin:auto; text-align:center; }
 
   img, video {
-    max-width: 100%; /* max-height: 100%; */
+    max-width: 100%;
     height: auto;
   }
 
@@ -68,7 +71,7 @@
       margin: 1em auto; /* outermost white space between containers */
       border: 1.2em solid black; /* then thick frame border */
       padding: 1.3em; /* this is background surrounding text */
-      width: 40%;
+      width: 60%;
       background-color: white;
       line-height: 200%;
   }
