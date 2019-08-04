@@ -1,0 +1,99 @@
+/*
+    ELEMENT SELECTORS { STYLE PROPERTIES }
+
+    . refers to a class
+    # refers to a unique id
+
+    See /home/data/proj/git/levi
+*/
+
+  * {margin:0;} /* select all elements to have no margin between */
+
+  html
+  {
+      font-size:large;
+  }
+
+  h1.title
+  {
+      font-family:Verdana, Geneva, sans-serif;
+      font-size:100%;
+      font-weight:bold;
+      color:green;
+      text-align:center;
+      margin-left:0px;
+      text-decoration:none;
+      line-height:150%
+  }
+
+  h2.heading, h2.heading-left, h2.heading-center, h3.heading-left, h3.heading-center
+  {
+       font-family:Verdana, Geneva, sans-serif;
+       font-size:100%;
+       font-weight:bold;
+       color:black;
+       margin-left:0px;
+       text-decoration:none;
+       line-height:150%;
+  }
+
+  h2.heading-left { text-align:left; }
+  h2.heading-center { text-align:center; }
+
+  h3.heading-left { text-align:left; color:red;}
+  h3.heading-center { text-align:center; color:red;}
+
+  a.goto
+  {
+       font-family:Verdana, Geneva, sans-serif;
+       font-size:90%;
+       font-weight:bold;
+       color:blue;
+       text-align:left;
+       margin-left:3%;
+       text-decoration:underline;
+       line-height:150%;
+       padding-left:0pt;
+  }
+
+    /**************************************************************
+    * You can create your own colors here and give each a name
+    **************************************************************/
+    .aqua         { background-color:#00ffff; } 
+    .black        { background-color:#000000; } 
+    .blue         { background-color:#0000ff; }
+    .blue2        { background-color:#DAF4F0; }
+    .fuchsia      { background-color:#ff00ff; } 
+    .gray         { background-color:#808080; }
+    .green        { background-color:#008000; }
+    .lime         { background-color:#00ff00; } 
+    .maroon       { background-color:#800000; }
+    .navy         { background-color:#000080; }
+    .olive        { background-color:#808000; }
+    .orange       { background-color:#ffA500; }
+    .orange2      { background-color:#FFDAB9; }
+    .pink         { background-color:#FFE5F9; }
+    .purple       { background-color:#800080; }
+    .purple3      { background-color:#E6E6FA; }
+    .red          { background-color:#ff0000; }
+    .silver       { background-color:#c0c0c0; }
+    .teal         { background-color:#008080; }
+    .white        { background-color:#ffffff; }
+    .yellow       { background-color:#ffff00; }
+    .pale-blue    { background-color:#CAF7F5; }
+    .pale-green   { background-color:#CCFFCC; }
+    .pale-orange  { background-color:#FFE5C0; }
+    .pale-purple  { background-color:#D7CFFF; }
+    .pale-yellow  { background-color:#F9FFE6; }
+
+    /**************************************************************
+    * This specifies the bold black border
+    **************************************************************/
+    div.container-with-border {
+        margin: 1em auto; /* outermost white space between containers */
+        border: 1.2em solid black; /* then thick frame border */
+        padding: 1.3em; /* this is background surrounding text */
+        width:40%;
+        background-color:white;
+    }
+ 
