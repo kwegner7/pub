@@ -1,0 +1,110 @@
+/*
+      Format is: ELEMENT SELECTORS { STYLE PROPERTIES }
+    For example: h1,h2 { font-size:large; }
+
+    . refers to a class
+    # refers to a unique id
+*/
+
+  * {
+    margin:0; /* select all elements to have no margin between them */
+    box-sizing: border-box; /* padding and border included in total width/height */
+  }
+
+  body {
+    font-family:Verdana, Geneva, sans-serif;
+    width: auto;
+    max-width: 40em;
+    background-color: white;
+    border: 1em solid white;
+  }
+
+  html {
+    font-size:large;
+  }
+
+  h1, h1.title {
+    font-size:100%;
+    font-weight:bold;
+    color:green;
+    text-align:center;
+    text-decoration:none;
+  }
+
+  h2, h3 {
+    font-size:100%;
+    font-weight:bold;
+    color:black;
+    text-decoration:none;
+  }
+
+  h2.heading, h2.heading-left { text-align:left;   }
+  h2.heading-center           { text-align:center; }
+
+  h3.heading, h3.heading-left { text-align:left; color:red; font-size:90%;   }
+  h3.heading-center           { text-align:center; color:red; font-size:90%; }
+
+  a {
+     font-size:90%;
+     font-weight:bold;
+     color:blue;
+     margin-left:3%;
+     text-decoration:underline;
+     display:block; 
+  }
+
+  a.goto, a.goto-left { text-align:left; }
+  a.goto-center       { margin:auto; text-align:center; }
+
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  audio {
+    margin-left:30%;
+    width:100%;
+  }
+
+  /**************************************************************
+  * This specifies the bold black border
+  **************************************************************/
+  div.solid-border {
+      margin: 2em auto;  /* outermost white space between sub-items */
+      border: 1em solid black; /* then thick frame border */
+      padding: 1em; /* this is background surrounding text */
+      width: 100%;
+      background-color: white;
+      line-height: 200%;
+  }
+ 
+  /**************************************************************
+  * You can create your own colors here and give each a name
+  **************************************************************/
+  .aqua         { background-color:#00ffff; } 
+  .black        { background-color:#000000; } 
+  .blue         { background-color:#0000ff; }
+  .blue2        { background-color:#DAF4F0; }
+  .fuchsia      { background-color:#ff00ff; } 
+  .gray         { background-color:#808080; }
+  .green        { background-color:#008000; }
+  .lime         { background-color:#00ff00; } 
+  .maroon       { background-color:#800000; }
+  .navy         { background-color:#000080; }
+  .olive        { background-color:#808000; }
+  .orange       { background-color:#ffA500; }
+  .orange2      { background-color:#FFDAB9; }
+  .pink         { background-color:#FFE5F9; }
+  .purple       { background-color:#800080; }
+  .purple3      { background-color:#E6E6FA; }
+  .red          { background-color:#ff0000; }
+  .silver       { background-color:#c0c0c0; }
+  .teal         { background-color:#008080; }
+  .white        { background-color:#ffffff; }
+  .yellow       { background-color:#ffff00; }
+  .pale-blue    { background-color:#CAF7F5; }
+  .pale-green   { background-color:#CCFFCC; }
+  .pale-orange  { background-color:#FFE5C0; }
+  .pale-purple  { background-color:#D7CFFF; }
+  .pale-yellow  { background-color:#F9FFE6; }
+
