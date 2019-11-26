@@ -23,6 +23,9 @@
     font-size:large;
   }
 
+  pre {
+    line-height: 110%;
+  }
   p {
     font-family: Consolas, monaco, monospace;
     font-size:100%;
