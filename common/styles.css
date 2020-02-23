@@ -37,6 +37,10 @@
     line-height: 110%;
   }
 
+  indent {
+    margin-left:12%;
+  }
+
   h1, h1.title {
     font-size:100%;
     font-weight:bold;
@@ -93,6 +97,23 @@
     font-weight:normal;
     color:black;
   }
+
+dd {
+  display: block;
+  margin-left: 40px;
+}
+
+dl {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+dt {
+  display: block;
+}
 
   /**************************************************************
   * This specifies the bold black border
