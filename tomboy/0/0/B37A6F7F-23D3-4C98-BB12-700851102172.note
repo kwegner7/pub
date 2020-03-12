@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Buy New Car</title>
+  <text xml:space="preserve"><note-content version="0.1"><underline>Buy New Car</underline>
+https://www.autotrader.com/car-shopping/suv-vs-crossover-whats-difference-215843
+</note-content></text>
+  <last-change-date>2020-02-22 09:29:26</last-change-date>
+  <last-metadata-change-date>2020-02-22 09:29:26</last-metadata-change-date>
+  <create-date>2020-02-22 09:29:26</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>617</width>
+  <height>497</height>
+  <x>551</x>
+  <y>196</y>
+  <open-on-startup>False</open-on-startup>
+</note>

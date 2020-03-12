@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>RedHat Setup</title>
+  <text xml:space="preserve"><note-content version="0.1"><underline>RedHat Setup</underline>
+<list><list-item dir="ltr">Install Dropbox</list-item></list>
+<list><list-item dir="ltr">Install Tomboy</list-item></list>
+
+<underline>Eclipse PHP
+
+
+ADOBE ON FIREFOX</underline>
+
+rpm -ivh http://linuxdownload.adobe.com/adobe-release/adobe-release-x86_64-1.0-1.noarch.rpm
+
+rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
+
+yum install flash-plugin alsa-plugins-pulseaudio libcurl
+
+</note-content></text>
+  <last-change-date>2020-02-22 12:28:53</last-change-date>
+  <last-metadata-change-date>2020-02-22 12:28:53</last-metadata-change-date>
+  <create-date>2020-01-31 12:45:58</create-date>
+  <cursor-position>1</cursor-position>
+  <selection-bound-position>1</selection-bound-position>
+  <width>1069</width>
+  <height>656</height>
+  <x>295</x>
+  <y>28</y>
+  <open-on-startup>False</open-on-startup>
+</note>
