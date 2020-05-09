@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>COMPILE IN THE WORK AREA</title>
+  <link rel="stylesheet" href="../styles-default.css">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<!-- ======================================================================= -->
+
+<div class="border-teal bold">
+
+<h3 class="teal under center">COMPILE IN THE WORK AREA</h3>
+
+<p>There are four files that result from the compilation process:</p>
+<p class=shift>
+  k:\work\tools\GENFIT.exe<br>
+  k:\work\tools\GENFIT.dll<br>
+  k:\work\tools\genfit_dose.dll<br>
+  k:\work\tools\xerces-c_3_2D.dll
+</p>
+
+<p>These files may be transferred from outside to inside the ADTEC and
+they will function correctly without re-compiling. There may be a reason
+to change the source code, for example, to insert a print statement. (There
+is no reason to change the Xerces source code.) The following Powershell
+commands will re-compile and regenerate the exe and dlls in the <em>tools</em> folder:</p>
+<p class=shift>
+  cd k:\work<br>
+  tools\build<br>
+</p>
+
+<h4 class="teal under">MSBuild</h4>
+
+<p>
+The <em>build.ps1</em> script invokes the Visual Studio project by means of the
+MSBuild program. Therefore the location of MSBuild.exe must be in the Powershell
+path. The Powershell path can be set in the profile script. If it does not exist,
+create the file:</p>
+<p class=shift style="font-size:90%">
+   C:\Users&#92;&#60;your name&#62;&#92;Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+</p>
+<p>Add the following lines to the user Powershell script (the location of the MSBuild
+may be different among the Windows 10 machines in the ADTEC): </p>
+<p class=shift>
+  $env:Path += ";C:\Program Files (x86)\MSBuild\14.0\Bin"<br>
+  $env:Path += ";C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin"
+</p>
+
+</div>
+<!-- ======================================================================= -->
+</body>
+</html>

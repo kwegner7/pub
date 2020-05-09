@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>HOW TO RUN</title>
+  <link rel="stylesheet" href="../styles-default.css">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<!-- ======================================================================= -->
+
+<div class="border-teal bold">
+
+<h3 class="teal under center">HOW TO RUN RADIATION EFFECTS SOFTWARE</h3>
+
+<p>Each run is determined by an input xml file. And you may specify
+where you want the outputs to go. If not specified, the outputs will go to
+the current working directory. In the k:\work\run folder are sub-folders
+called <em>inputs</em> and <em>outputs</em>. But you do not have to use these folders,
+they are provided for convenience. You may specify absolute paths or relative paths.
+The following are all equivalent ways
+to process the input file called <em>envrng.xml</em> and the outputs go to the folder called
+<em>outputs</em>:</p>
+<p class=shift>
+  cd k:\work<br>
+  tools\run run\inputs\envrng.xml run\outputs<br><br>
+  cd k:\work<br>
+  tools\run -FileIn run\inputs\envrng.xml -FolderOut run\outputs<br><br>
+  cd k:\work\tools<br>
+  run k:\work\run\inputs\envrng.xml ..\run\outputs<br><br>
+  cd k:\work\run\outputs<br>
+  k:\work\tools\run ..\inputs\envrng.xml<br><br>
+  cd to anywhere<br>
+  k:\work\tools\run k:\work\run\inputs\envrng.xml k:\work\run\outputs
+</p>
+<p>In the folder k:\work\run\outputs will now be the files:</p>
+<p class=shift>
+  envrng-out.xml<br>
+  envrng.csv
+</p>
+
+<p>You can run all input xml files within a folder. The following are all equivalent ways
+to process a folder:</p>
+<p class=shift>
+  cd k:\work<br>
+  tools\run-all run\inputs run\outputs<br><br>
+  cd k:\work<br>
+  tools\run-all -FolderIn run\inputs -FolderOut run\outputs<br><br>
+  cd to anywhere<br>
+  k:\work\tools\run-all k:\work\run\inputs k:\work\run\outputs
+</p>
+
+
+<h4 class="teal under">INPUT XML FILE</h4>
+
+<p>Radiation Effects Software can determine:</p>
+<p class=shift>
+  -- dose value given positions of the burst and receiver<br>
+  -- distance between burst and receiver that acheives a constraint dose<br>
+  -- yield of device that acheives a constraint dose
+</p>
+<p>The input xml file determines:</p>
+<p class=shift>
+  -- characteristics of the device<br>
+  -- sequence of positions of the burst and receiver<br>
+  -- environments of interest
+</p>
+<p>Details of how to configure the input xml file are contained in the
+<a target="_blank" href="../doc/End-User-Manual.pdf">
+<em>User Manual</em></a>
+<br><br>Detailed software requirements are contained in the
+<a target="_blank" href="../doc/Software-Requirements-Specification.pdf">
+<em>Software Requirements Specification</em></a>
+</p>
+<h4 class="teal under">USING CSV FILE TO SPECIFY THE GEOMETRY</h4>
+<p>
+When the run kind is "FLYTHRU" the program will read the geometry from a CSV file.
+The columns of the CSV file are:</p>
+<p class=shift>
+  altitude of burst in feet<br>
+  altitude of receiver in feet<br>
+  distance between burst and receiver in feet</p>
+
+<p>The output CSV file will have the following columns:</p>
+<p class=shift>
+  altitude of burst in feet<br>
+  altitude of receiver in feet<br>
+  distance between burst and receiver in feet<br>
+  angle between burst and receiver in degrees<br>
+  horizontal offset between burst and receiver in feet<br>
+  air depth (rohr) in g/cm2<br>
+  dose value</p>
+
+<p>The location of the CSV file is specified in the input xml file under the
+&#60;geometry&#62; and &#60;runkind&#62; tags. The other sub-tags of &#60;geometry&#62; are ignored. For example:</p>
+<p class=shift>
+   &#60;geometry&#62;<br>
+   &nbsp;&nbsp;&#60;runkind&#62;FLYTHRU K:\\work\\runs\\geometry\\HeightHeightSlant.csv&#60;runkind&#62;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;. . .<br>
+   &#60;/geometry&#62;</p>
+
+</div>
+<!-- ======================================================================= -->
+</body>
+</html>

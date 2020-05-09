@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Set Up the Work Area</title>
+  <link rel="stylesheet" href="../styles-default.css">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<!-- ======================================================================= -->
+
+<div class="border-teal bold">
+
+<h3 class="teal under center">SET UP THE WORK AREA</h3>
+
+<p>The Radiation Effects Software can be run inside or outside of the classified area.
+Inside of ADTEC, the <i>classified</i> database is used. Outside of ADTEC, the <em>unclassified</em>
+database is used.
+</p>
+
+<p>There is a set of historical RES version packages available
+at the Navy SP unclassified server. Each package is complete and sufficient to compile,
+run and regression test the program. The name of the folder is the date of the version:
+</p>
+
+<p class=shift>
+  \\usqts1nas01\COS1\USCOS1\NavySP\Repo\RES\versions\2020-04-06<br>
+  \\usqts1nas01\COS1\USCOS1\NavySP\Repo\RES\versions\2020-04-17<br>
+  <span style="padding-left:25%">. . .</span><br>
+  <span style="padding-left:25%">. . .</span>
+</p>
+
+<h4 class="teal under">UNCLASSIFIED WORK AREA</h4>
+<p class=shift>
+Copy the version package to a local work area on your unclassified office PC. For example, create a folder at k:\work to
+contain the RES package. The <em>unclassified</em> database will be located at:<br><br>
+<span class=shift>k:\work\tools\genfit.db3</span>
+</p>
+
+<h4 class="teal under">CLASSIFIED WORK AREA</h4>
+<p class=shift>
+Create a DVD from the version package. Schedule a DTA to move the DVD into ADTEC. Copy the version package to your
+user space on a Windows 10 computer in the ADTEC. For example, create a folder at k:\work to contain the RES package.
+The <em>unclassified</em> database will be located at:<br><br>
+<span class=shift>k:\work\tools\genfit.db3</span><br><br>
+Replace the <em>unclassified</em> version of the database with the <em>classified</em> version
+by copying <em>genfit.db3</em> from:<br><br>
+<span class=shift>\\navyfs04\GIT_Repository\RadiationEffectsSoftware</span>
+</p>
+
+<h4 class="teal under">VERSION PACKAGE</h4>
+
+<p class=shift>Open the PowerShell and type:<br><br>
+
+<span class=shift>cd k:\work<br></span>
+<span class=shift>dir<br></span>
+
+</p>
+<p class=shift>
+There are five folders in the package:
+</p>
+<dl class=shift>
+  <dt><u>notes</u></dt>
+    <dd>The <em>notes</em> folder contains instructions for compiling, running 
+        and performing regression tests.</dd><br>
+  <dt><u>src</u></dt>
+    <dd>The <em>src</em> folder contains the source code for Radiation Effects Software.</dd><br>
+  <dt><u>run</u></dt>
+    <dd>The <em>run</em> folder contains the input and output xml and csv files.</dd><br>
+  <dt><u>tools</u></dt>
+    <dd>The <em>tools</em> folder contains scripts for compiling, running 
+        and performing regression tests. This folder also contains
+        the executable file, the dll files and the database file.</dd><br>
+  <dt><u>xerces</u></dt>
+    <dd>The <em>xerces</em> folder contains the third party software used for reading
+        and writing xml files.</dd>
+</dl>
+
+</div>
+<!-- ======================================================================= -->
+</body>
+</html>
+
+
+
+<!-- p>There are two Git repositories for Radiation Effects Software:
+
+</p>
+
+<ul>
+  <li>\\usqts1nas01\COS1\USCOS1\NavySP\Repo\RES\Code.git</li>
+  <li>\\usqts1nas01\COS1\USCOS1\NavySP\Repo\RES\Doc.git</li>
+</ul>
+
+<p>
+The Code.git repository contains all source code and scripts used in software development
+of RES. The Doc.git contains all documentation including requirements, design and test.
+From these two Git repositories is extracted a subset of files sufficient to compile
+and run and regression test the program. These version packages are preserved in dated
+folders at:
+</p>
+
+<p style="padding-left:20%; padding-right:20%;">
+One of the principal advantages of object-oriented programming techniques over procedural programming techniques is that they enable programmers to create modules that do not need to be changed when a new type of object is added. A programmer can simply create a new object that inherits many of its features from existing objects. This makes object-oriented programs easier to modify.
+</p>
+
+<p class=shift>
+mkdir --parents $WORK_AREAz<br> mkdir --parents $WORK_AREAz<br>
+mkdir --parents $WORK_AREAz<br> mkdir --parents $WORK_AREAz<br>
+mkdir --parents $WORK_AREAz<br> mkdir --parents $WORK_AREAz<br>
+</p -->
