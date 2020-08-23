@@ -1,0 +1,432 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Tutorial</title>
+  <link rel="stylesheet" href="../../common/styles-default.css">
+  <link rel="stylesheet" href="../../common/styles.css">
+</head>
+
+<script>
+function myFunction5() {
+  document.getElementById("demo5").innerHTML = "Paragraph changed.";
+}
+</script>
+
+<body>
+<hr>
+
+<!-- ======================================================================= -->
+<div class=border-lime>
+Java Tutorial
+
+<h2>What Can JavaScript Do?</h2>
+
+<!-- Content is at id demo -->
+<p id="demo">JavaScript can change HTML content.</p>
+
+<!-- Execute javascript from onclick -->
+<!-- Find an element and insert some content there -->
+<button type="button"
+  onclick='document.getElementById("demo").innerHTML =
+ "Hello JavaScript!"'
+ >Click Me!</button>
+
+<!-- ======================================================================= -->
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the 
+value of the src (source) attribute of an image.</p>
+
+<!-- If user clicks on "Turn on the light" -->
+<!-- Besides changing content, you can change an attribute of a tag like "img" -->
+<button onclick=
+"document.getElementById('myImage').src='../pictures/pic_bulbon.gif'"
+>Turn on the light
+</button>
+
+<img id="myImage" src="../pictures/pic_bulboff.gif" style="width:100px">
+
+
+<button onclick=
+"document.getElementById('myImage').src=
+'../pictures/pic_bulboff.gif'">Turn off the light</button>
+
+
+<!-- ======================================================================= -->
+<p id="demo1">JavaScript can change the style of an HTML element.</p>
+<button type="button" onclick="document.getElementById('demo1').style.fontSize='35px'">Click Me!</button>
+<!-- ======================================================================= -->
+<p id="demo2">JavaScript can hide HTML elements.</p>
+<button type="button" onclick="document.getElementById('demo2').style.display='none'">Click Me!</button>
+<!-- ======================================================================= -->
+<p>JavaScript can show hidden HTML elements.</p>
+<p id="demo3" style="display:none">Hello JavaScript!</p>
+<button type="button" onclick="document.getElementById('demo3').style.display='block'">Click Me!</button>
+<!-- ======================================================================= -->
+<h2>JavaScript in Body - Notice you can start with empty p tag
+and it executes the script inline </h2>
+<p id="demo4"></p>
+<script>
+document.getElementById("demo4").innerHTML = "My First JavaScript";
+</script>
+<!-- ======================================================================= -->
+<h2>JavaScript in Head</h2>
+<p id="demo5">A Paragraph5.</p>
+<button type="button" onclick="myFunction5()">Try it5</button>
+
+<!-- ======================================================================= -->
+<h2>JavaScript in Body</h2>
+<p id="demo6">A Paragraph6.</p>
+<button type="button" onclick="myFunction6()">Try it6</button>
+<script>
+function myFunction6()
+{
+  document.getElementById("demo6").innerHTML = "Paragraph changed.";
+}
+</script>
+<!-- ======================================================================= -->
+<h2>External JavaScript</h2>
+<p id="demo7">A Paragraph7.</p>
+<button type="button" onclick="myFunction7()">Try it7</button>
+<p>(myFunction is stored in an external file called "myScript7.js")</p>
+<script src="../js/myScript7.js"></script>
+<!-- ======================================================================= -->
+<h2>External JavaScript</h2>
+<p id="demo8">A Paragraph.</p>
+<button type="button" onclick="myFunction()">Try it</button>
+<p>(myFunction is stored in an external file called "myScript.js")</p>
+<script src="https://www.w3schools.com/js/myScript.js"></script>
+<!-- ======================================================================= -->
+<h1>My First Web Page</h1>
+<p>My First Paragraph Fill a blank p tag</p>
+<p id="demo9"></p>
+<script>
+document.getElementById("demo9").innerHTML = 5 + 6;
+</script>
+<!-- ======================================================================= -->
+<h2>My First Web Page</h2>
+<p>My first paragraph.</p>
+<p>Never call document.write after the document has finished loading.
+It will overwrite the whole document.</p>
+<script>
+document.write(5 + 6);
+</script>
+<!-- ======================================================================= -->
+
+<h2>My First Web Page</h2>
+<p>My first paragraph.</p>
+
+<!-- button type="button" onclick="document.write(5 + 6)">Try it</button -->
+
+<!-- ======================================================================= -->
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+<!-- script>
+window.alert(5 + 6);
+</script -->
+<!-- ======================================================================= -->
+<h2>Activate Debugging</h2>
+<p>F12 on your keybord will activate debugging. Rather, Web Console</p>
+<p>Then select "Console" in the debugger menu.</p>
+<p>Then click Run again.</p>
+<script>
+console.log(5 + 6);
+</script>
+<!-- ======================================================================= -->
+<h2>The window.print() Method</h2>
+<p>Click the button to print the current page.</p>
+<button onclick="window.print()">Print this page</button>
+<!-- ======================================================================= -->
+<h2>JavaScript Statements</h2>
+<p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+<p id="demo10"></p>
+<script>
+var x, y, z;  // Statement 1
+x = 5;        // Statement 2
+y = 6;        // Statement 3
+z = x + y;    // Statement 4
+document.getElementById("demo10").innerHTML =
+"The value of z is " + z + ".";  
+</script>
+<!-- ======================================================================= -->
+<h2>JavaScript Statements</h2>
+<p>In HTML, JavaScript statements are executed by the browser.</p>
+<p id="demo11"></p>
+<script>
+document.getElementById("demo11").innerHTML = "Hello Dolly.";
+</script>
+<!-- ======================================================================= -->
+<h2>JavaScript Statements</h2>
+<p>JavaScript code blocks are written between { and }</p>
+<button type="button" onclick="myFunction71()">Click Me!</button>
+<p id="demo71"></p>
+<p id="demo72"></p>
+<script>
+function myFunction71() {
+  document.getElementById("demo71").innerHTML = "Hello Dolly!";
+  document.getElementById("demo72").innerHTML = "How are you?";
+}
+</script>
+<!-- ======================================================================= -->
+
+<h2>JavaScript Statements</h2>
+
+<p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+<p id="demo12"></p>
+
+<script>
+var x, y, z;  // Statement 1
+x = 5;        // Statement 2
+y = 6;        // Statement 3
+z = x + y;    // Statement 4
+
+document.getElementById("demo12").innerHTML =
+"The value of z is " + z + ".";  
+</script>
+
+<!-- ======================================================================= -->
+
+<button onclick="this.innerHTML=Date()">The time is?</button>
+
+<!-- ======================================================================= -->
+<p>Click the button to display the date.</p>
+
+<button onclick="displayDate()">The time is?</button>
+
+<script>
+function displayDate() {
+  document.getElementById("demo13").innerHTML = Date();
+}
+</script>
+
+<p id="demo13"></p>
+
+<!-- ======================================================================= -->
+
+<h2>JavaScript Arrays</h2>
+
+<p>Array.forEach() calls a function for each array element.</p>
+
+<p>Array.forEach() is not supported in Internet Explorer 8 or earlier.</p>
+
+<p id="demo14"></p>
+
+<script>
+var fruits, text;
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+text = "<ul>";
+fruits.forEach(myFunction);
+text += "</ul>";
+document.getElementById("demo14").innerHTML = text;
+
+function myFunction(value) {
+  text += "<li>" + value + "</li>";
+} 
+</script>
+
+<!-- ======================================================================= -->
+
+<h2>JavaScript Array Methods</h2> 
+
+<h2>toString()</h2>
+
+<p>The toString() method returns an array as a comma separated string:</p>
+
+<p id="demo15"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo15").innerHTML = fruits.toString();
+</script>
+
+<!-- ======================================================================= -->
+
+<h2>JavaScript Array Methods</h2> 
+
+<h2>join()</h2>
+
+<p>The join() method joins array elements into a string.</p>
+
+<p>It this example we have used " * " as a separator between the elements:</p>
+
+<p id="demo16"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo16").innerHTML = fruits.join(" * ");
+</script>
+<!-- ======================================================================= -->
+
+<h2>JavaScript Array Methods</h2> 
+
+<h2>pop()</h2>
+
+<p>The pop() method removes the last element from an array.</p>
+
+<p>The return value of the pop() method is the removed item.</p>
+
+<p id="demo171"></p>
+<p id="demo172"></p>
+<p id="demo173"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo171").innerHTML = fruits;
+document.getElementById("demo172").innerHTML = fruits.pop();
+document.getElementById("demo173").innerHTML = fruits;
+</script>
+
+<!-- ======================================================================= -->
+
+<h2>JavaScript Array Sort</h2>
+
+<p>Click the buttons to sort the array alphabetically or numerically.</p>
+
+<button onclick="myFunction1()">Sort Alphabetically</button>
+<button onclick="myFunction2()">Sort Numerically</button>
+
+<p id="demo18"></p>
+
+<script>
+var points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo18").innerHTML = points;  
+
+function myFunction1() {
+  points.sort();
+  document.getElementById("demo18").innerHTML = points;
+}
+function myFunction2() {
+  points.sort(function(a, b){return a - b});
+  document.getElementById("demo18").innerHTML = points;
+}
+</script>
+
+<!-- ======================================================================= -->
+
+<h2>JavaScript Array.forEach()</h2>
+
+<p>Calls a function once for each array element.</p>
+
+<p id="demo19"></p>
+
+<script>
+var txt = "";
+var numbers = [45, 4, 9, 16, 25];
+numbers.forEach(myFunction);
+document.getElementById("demo19").innerHTML = txt;
+
+function myFunction(value) {
+  txt = txt + value + "<br>"; 
+}
+</script>
+
+<!-- ======================================================================= -->
+
+<h2>JavaScript Array.map()</h2>
+
+<p>Creates a new array by performing a function on each array element.</p>
+
+<p id="demo20"></p>
+
+<script>
+var numbers1 = [45, 4, 9, 16, 25];
+var numbers2 = numbers1.map(myFunction);
+
+document.getElementById("demo20").innerHTML = numbers2;
+
+function myFunction(value, index, array) {
+  return value * 2;
+}
+</script>
+
+<!-- ======================================================================= -->
+
+<h2>JavaScript Array.filter()</h2>
+
+<p>Creates a new array with all array elements that passes a test.</p>
+
+<p id="demo21"></p>
+
+<script>
+var numbers = [45, 4, 9, 16, 25];
+var over18 = numbers.filter(myFunction);
+
+document.getElementById("demo21").innerHTML = over18;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+</script>
+
+<!-- ======================================================================= -->
+
+<h2>JavaScript Array.reduce()</h2>
+
+<p>This example finds the sum of all numbers in an array:</p>
+
+<p id="demo22"></p>
+
+<script>
+var numbers = [45, 4, 9, 16, 25];
+var sum = numbers.reduce(myFunction, 100);
+
+document.getElementById("demo22").innerHTML = "The sum is " + sum;
+
+function myFunction(total, value) {
+  return total + value;
+}
+</script>
+
+<!-- ======================================================================= -->
+
+<h2>JavaScript Array.every()</h2>
+
+<p>The every() method checks if all array values pass a test.</p>
+
+<p id="demo23"></p>
+
+<script>
+var numbers = [45, 4, 9, 16, 25];
+var allOver18 = numbers.every(myFunction);
+
+document.getElementById("demo23").innerHTML = "All over 18 is " + allOver18;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+</script>
+
+
+<!-- ======================================================================= -->
+
+<h2>JavaScript Error Handling</h2>
+
+<p>This example demonstrates how to use <b>catch</b> to diplay an error.</p>
+
+<p id="demo24"></p>
+
+<script>
+try {
+  adddlert("Welcome guest!");
+}
+catch(err) {
+  document.getElementById("demo24").innerHTML = err.message;
+}
+</script>
+
+<!-- ======================================================================= -->
+
+<!-- ======================================================================= -->
+
+<!-- ======================================================================= -->
+
+<!-- ======================================================================= -->
+</div>
+<hr>
+</body>
+</html>
+
+

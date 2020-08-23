@@ -16,61 +16,62 @@
     li a:hover{text-decoration:none;}
   </style>
 
+
 <!-- ======================================================================= -->
+<script>
 $(document).ready(function () {
-	init();
+	init(); // initialize this webpage
+
 	function init(){
-		var current = 0;
-		var audio = $('#playing'); // jquery identifies the id for playing
-		var playlist = $('#playlist'); // jquery for the playlist ul
-		var tracks = playlist.find('li a');
-		var len = tracks.length - 1;
-		audio[0].volume = .10;
+
+		var current = 0; // which song to play
+		var audio = $('#playing'); // tag:audio id:playing
+		var playlist = $('#playlist'); // tag:ul id:playlist
+		var tracks = playlist.find('li a'); // all <ul><li><a>link to an mp3
+		var len = tracks.length - 1; // number of mp3
+		audio[0].volume = .10; // attributes of the first and only audio
 		audio[0].play();
+
+        // if click on song, 
 		playlist.on('click','a', function(e){
 			e.preventDefault();
-			link = $(this);
+			link = $(this); // reference to the song
 			current = link.parent().index();
-			run(link, audio[0]);
+			playSong(link, audio[0]); // function playSong is below
 		});
+
+        // if song ended, cycle to the next song in playlist
 		audio[0].addEventListener('ended',function(e){
 			current++;
 			if(current == len){
 				current = 0;
 				link = playlist.find('a')[0];
 			}else{
-				link = playlist.find('a')[current];    
+				link = playlist.find('a')[current];  // find <a>  
 			}
-			run($(link),audio[0]);
+			playSong($(link),audio[0]);
 		});
 	}
-	function run(link, player){
-			player.src = link.attr('href');
+	function playSong(link, player){
+			player.src = link.attr('href'); // src is the full link
+            document.write(player.src);
 			par = link.parent();
 			par.addClass('active').siblings().removeClass('active');
 			player.load();
 			player.play();
 	}
 });
+</script>
 <!-- ======================================================================= -->
 </head>
-
 <body>
+
 <hr>
 
 <!-- ======================================================================= -->
 <div class=border-lime>
 
   <h2 class="black">Worship Recordings</h2>
-  <h3 class=shift>
-    <a target="_blank" href="https://www.woodlandparkcommunitychurch.com/"
-    >Woodland Park Community Church 9 and 10:45</a><br><br>
-  </h3>
-
-  <audio id="playing" preload="auto" tabindex="0" controls="" >
-    <source src="http://www.archive.org/download/bolero_69/Bolero.mp3">
-    Error playing the audio
-  </audio>
 
     <ul id="playlist">
         <li class="active">
@@ -95,6 +96,10 @@ $(document).ready(function () {
         </li>
     </ul>
 
+  <!-- audio id="playing" preload="auto" tabindex="0" controls="" >
+    <source src="http://www.archive.org/download/bolero_69/Bolero.mp3">
+    Error playing the audio
+  </audio -->
 
 </div>
 <!-- *********************************************************************** -->
