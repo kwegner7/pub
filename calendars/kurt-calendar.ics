@@ -2,7 +2,7 @@ BEGIN:VCALENDAR
 CALSCALE:GREGORIAN
 PRODID:-//Ximian//NONSGML Evolution Calendar//EN
 VERSION:2.0
-X-EVOLUTION-DATA-REVISION:2020-11-22T01:02:48.514138Z(0)
+X-EVOLUTION-DATA-REVISION:2020-12-11T02:14:16.301161Z(0)
 BEGIN:VTIMEZONE
 TZID:America/Denver
 TZURL:http://tzurl.org/zoneinfo-outlook/America/Denver
@@ -15177,5 +15177,191 @@ TRANSP:OPAQUE
 CLASS:PUBLIC
 CREATED:20201122T010248Z
 LAST-MODIFIED:20201122T010248Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Programming with Data: Foundations of Python and Pandas
+DTSTART:20201130T150000Z
+DTEND:20201130T190000Z
+DTSTAMP:20201124T171353Z
+UID:0636920469643-0636920469667
+DESCRIPTION:Whether in R\, MATLAB\, Stata\, or Python\, modern data 
+ analysis\, for many researchers\, requires some kind of programming. The 
+ preponderance of tools and specialized languages for data analysis 
+ suggests that general purpose programming languages like C and Java do 
+ not readily address the needs of data scientists\; something more is 
+ needed.\n \nIn this training\, you will learn how to accelerate your data 
+ analyses using the Python language and Pandas\, a library specifically 
+ designed for interactive data analysis. Pandas is a massive library\, so 
+ we will focus on its core functionality\, specifically\, loading\, 
+ filtering\, grouping\, and transforming data. Having completed this 
+ workshop\, you will understand the fundamentals of Pandas\, be aware of 
+ common pitfalls\, and be ready to perform your own analyses.\n\nGo to the 
+ event (https:
+ //learning.oreilly.com/live-training/courses/programming-with-data-foundat
+ ions-of-python-and-pandas/0636920469643/join/)\n
+LOCATION:Online
+ORGANIZER;CN=O´REILLY MEDIA:mailto:donotreply@oreilly.com
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+X-ALT-DESC;FMTTYPE=TEXT/HTML:\n<p>Whether in R\, MATLAB\, Stata\, or 
+ Python\, modern data analysis\, for many researchers\, requires some kind 
+ of programming. The preponderance of tools and specialized languages for 
+ data analysis suggests that general purpose programming languages like C 
+ and Java do not readily address the needs of data scientists\; something 
+ more is needed.</p>\n<p>In this training\, you will learn how to 
+ accelerate your data analyses using the Python language and Pandas\, a 
+ library specifically designed for interactive data analysis. Pandas is a 
+ massive library\, so we will focus on its core functionality\, 
+ specifically\, loading\, filtering\, grouping\, and transforming data. 
+ Having completed this workshop\, you will understand the fundamentals of 
+ Pandas\, be aware of common pitfalls\, and be ready to perform your own 
+ analyses.</p>\n<p><a href="https:
+ //learning.oreilly.com/live-training/courses/programming-with-data-foundat
+ ions-of-python-and-pandas/0636920469643/join/">Go to the event</a></p>\n
+CREATED:20201124T171413Z
+LAST-MODIFIED:20201124T171413Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Programming with Data: Foundations of Python and Pandas
+TRIGGER:-PT15M
+X-EVOLUTION-ALARM-UID:708de050860f336b157d4497232c4b04f7e9cf66
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Modern JavaScript Development
+DTSTART:20201208T170000Z
+DTEND:20201208T210000Z
+DTSTAMP:20201124T171726Z
+UID:0636920476191-0636920476214
+DESCRIPTION:This Modern JavaScript Development course is the training you 
+ need to take your skills to the next level. JavaScript has undergone a 
+ transformation in recent years. It now has full support for 
+ object-oriented programming\, functional programming (via arrow 
+ functions)\, asynchronous programming\, and modular development (via 
+ CommonJS modules). JavaScript also now has some extremely useful 
+ syntactic features such as destructuring\, the spread operator\, 
+ generators\, and more besides. This 8-hour class will walk you through 
+ these new features and show you how to use them with step-by-step 
+ examples and demos.\n \nThis training takes a thorough look at all the 
+ new features in JavaScript from ECMASript6 to ECMAScript10\, and also 
+ shows how to transpile into classic JavaScript for compatibility with all 
+ browsers. Andy Olsen\, veteran trainer and author\, provides labs so you 
+ can follow along and get the experience you need. Andy will provide full 
+ source code and solutions on GitHub\, plus some bonus exercises and 
+ solutions that you can take away for additional exploration and added 
+ value. \n\nGet the most out of your JavaScript programming by updating 
+ your knowledge to the latest version of the ECMAScript standard.\n\n\nGo 
+ to the event (https:
+ //learning.oreilly.com/live-training/courses/modern-javascript-development
+ /0636920476191/join/)\n
+LOCATION:Online
+ORGANIZER;CN=O´REILLY MEDIA:mailto:donotreply@oreilly.com
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+X-ALT-DESC;FMTTYPE=TEXT/HTML:\n<p>This Modern JavaScript Development 
+ course is the training you need to take your skills to the next level. 
+ JavaScript has undergone a transformation in recent years. It now has 
+ full support for object-oriented programming\, functional programming 
+ (via arrow functions)\, asynchronous programming\, and modular 
+ development (via CommonJS modules). JavaScript also now has some 
+ extremely useful syntactic features such as destructuring\, the spread 
+ operator\, generators\, and more besides. This 8-hour class will walk you 
+ through these new features and show you how to use them with step-by-step 
+ examples and demos.</p>\n<p>This training takes a thorough look at all 
+ the new features in JavaScript from ECMASript6 to ECMAScript10\, and also 
+ shows how to transpile into classic JavaScript for compatibility with all 
+ browsers. Andy Olsen\, veteran trainer and author\, provides labs so you 
+ can follow along and get the experience you need. Andy will provide full 
+ source code and solutions on GitHub\, plus some bonus exercises and 
+ solutions that you can take away for additional exploration and added 
+ value. </p>\n<p>Get the most out of your JavaScript programming by 
+ updating your knowledge to the latest version of the ECMAScript 
+ standard.</p>\n<p><a href="https:
+ //learning.oreilly.com/live-training/courses/modern-javascript-development
+ /0636920476191/join/">Go to the event</a></p>\n
+CREATED:20201124T171735Z
+LAST-MODIFIED:20201124T171735Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Modern JavaScript Development
+TRIGGER:-PT15M
+X-EVOLUTION-ALARM-UID:4878403d18bb491e2b555032e9312a064cb3580b
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Modern JavaScript Development
+DTSTART:20201209T170000Z
+DTEND:20201209T210000Z
+DTSTAMP:20201124T171726Z
+UID:0636920476191-0636920476238
+DESCRIPTION:This Modern JavaScript Development course is the training you 
+ need to take your skills to the next level. JavaScript has undergone a 
+ transformation in recent years. It now has full support for 
+ object-oriented programming\, functional programming (via arrow 
+ functions)\, asynchronous programming\, and modular development (via 
+ CommonJS modules). JavaScript also now has some extremely useful 
+ syntactic features such as destructuring\, the spread operator\, 
+ generators\, and more besides. This 8-hour class will walk you through 
+ these new features and show you how to use them with step-by-step 
+ examples and demos.\n \nThis training takes a thorough look at all the 
+ new features in JavaScript from ECMASript6 to ECMAScript10\, and also 
+ shows how to transpile into classic JavaScript for compatibility with all 
+ browsers. Andy Olsen\, veteran trainer and author\, provides labs so you 
+ can follow along and get the experience you need. Andy will provide full 
+ source code and solutions on GitHub\, plus some bonus exercises and 
+ solutions that you can take away for additional exploration and added 
+ value. \n\nGet the most out of your JavaScript programming by updating 
+ your knowledge to the latest version of the ECMAScript standard.\n\n\nGo 
+ to the event (https:
+ //learning.oreilly.com/live-training/courses/modern-javascript-development
+ /0636920476191/join/)\n
+LOCATION:Online
+ORGANIZER;CN=O´REILLY MEDIA:mailto:donotreply@oreilly.com
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+X-ALT-DESC;FMTTYPE=TEXT/HTML:\n<p>This Modern JavaScript Development 
+ course is the training you need to take your skills to the next level. 
+ JavaScript has undergone a transformation in recent years. It now has 
+ full support for object-oriented programming\, functional programming 
+ (via arrow functions)\, asynchronous programming\, and modular 
+ development (via CommonJS modules). JavaScript also now has some 
+ extremely useful syntactic features such as destructuring\, the spread 
+ operator\, generators\, and more besides. This 8-hour class will walk you 
+ through these new features and show you how to use them with step-by-step 
+ examples and demos.</p>\n<p>This training takes a thorough look at all 
+ the new features in JavaScript from ECMASript6 to ECMAScript10\, and also 
+ shows how to transpile into classic JavaScript for compatibility with all 
+ browsers. Andy Olsen\, veteran trainer and author\, provides labs so you 
+ can follow along and get the experience you need. Andy will provide full 
+ source code and solutions on GitHub\, plus some bonus exercises and 
+ solutions that you can take away for additional exploration and added 
+ value. </p>\n<p>Get the most out of your JavaScript programming by 
+ updating your knowledge to the latest version of the ECMAScript 
+ standard.</p>\n<p><a href="https:
+ //learning.oreilly.com/live-training/courses/modern-javascript-development
+ /0636920476191/join/">Go to the event</a></p>\n
+CREATED:20201124T171735Z
+LAST-MODIFIED:20201124T171735Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Modern JavaScript Development
+TRIGGER:-PT15M
+X-EVOLUTION-ALARM-UID:6811ba2557d3c7e78c00f4a4d44008fa72694b37
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:7716310172459ea63df87fd19b0f5c4fe06f8d2a
+DTSTAMP:20201210T213057Z
+DTSTART;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20201215T141000
+DTEND;TZID=/freeassociation.sourceforge.net/America/Denver:
+ 20201215T152000
+SEQUENCE:2
+SUMMARY:VANGUARD SKIN
+TRANSP:OPAQUE
+DESCRIPTION:Dec 15 at 2:10 PM.
+CLASS:PUBLIC
+CREATED:20201211T021416Z
+LAST-MODIFIED:20201211T021416Z
 END:VEVENT
 END:VCALENDAR
