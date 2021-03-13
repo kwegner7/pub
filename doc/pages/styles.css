@@ -1,0 +1,192 @@
+/*
+      Format is: ELEMENT SELECTORS { STYLE PROPERTIES }
+    For example: h1,h2 { font-size:large; }
+
+    . refers to a class
+    # refers to a unique id
+*/
+
+/**************************************************************
+* Custom CSS Values
+**************************************************************/
+
+.under  { text-decoration: underline; }
+.center { text-align: center; }
+.bold   { font-weight: bold; }
+.shift  { padding-left: 5%; padding-right: 5%; }
+
+a[target="_abc"] {
+  background-color: yellow;
+}
+
+body {
+  font-family: Consolas, monaco, monospace;
+  text-align: left;
+  color: black;
+}
+
+div {
+  margin: 0;  /* outermost white space between sub-items */
+  border: 0;  /* then thick frame border */
+  padding: 0; /* this is background surrounding text */
+  width: 100%;
+  background-color: white;
+}
+
+div, p, ul {
+  line-height: 120%;
+  font-size: large;
+}
+
+dl {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+dt {
+  display: block;
+  margin-left: 30px;
+  margin-left: 5%;
+}
+
+dd {
+  display: block;
+  margin-left: 40px;
+  margin-left: 10%;
+}
+
+h4 {
+  margin-top: 1.33em;
+  margin-bottom: 0; /* custom */
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+hr {
+  border-style: solid;
+  border-width: 5px;
+}
+
+li {
+  display: list-item;
+}
+
+p {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 5%; padding-right: 5%;
+}
+
+ul.no-bullet {
+  list-style-type: none;
+}
+
+
+/**************************************************************
+* Colors
+**************************************************************/
+  .aqua         { color:#00ffff; } 
+  .black        { color:#000000; } 
+  .blue         { color:#0000ff; }
+  .blue2        { color:#DAF4F0; }
+  .fuchsia      { color:#ff00ff; } 
+  .gray         { color:#808080; }
+  .green        { color:#008000; }
+  .darkgreen    { color:#006400; }
+  .lime         { color:#00ff00; } 
+  .maroon       { color:#800000; }
+  .navy         { color:#000080; }
+  .olive        { color:#808000; }
+  .orange       { color:#ffA500; }
+  .orange2      { color:#FFDAB9; }
+  .pink         { color:#FFE5F9; }
+  .purple       { color:#800080; }
+  .purple3      { color:#E6E6FA; }
+  .red          { color:#ff0000; }
+  .silver       { color:#c0c0c0; }
+  .teal         { color:#008080; }
+  .white        { color:#ffffff; }
+  .yellow       { color:#ffff00; }
+  .pale-blue    { color:#CAF7F5; }
+  .pale-green   { color:#CCFFCC; }
+  .pale-orange  { color:#FFE5C0; }
+  .pale-purple  { color:#D7CFFF; }
+  .pale-yellow  { color:#F9FFE6; }
+
+/**************************************************************
+* Color and size of the border surrounding a div
+**************************************************************/
+
+div.border,
+div.border-aqua,
+div.border-black,
+div.border-blue,
+div.border-blue2, 
+div.border-fuchsia,
+div.border-gray, 
+div.border-green, 
+div.border-darkgreen, 
+div.border-lime,
+div.border-maroon,     
+div.border-navy,        
+div.border-olive,       
+div.border-orange,      
+div.border-orange2,     
+div.border-pink,       
+div.border-purple,      
+div.border-purple3,     
+div.border-red,         
+div.border-silver,     
+div.border-teal,        
+div.border-white,       
+div.border-yellow,      
+div.border-pale-blue,    
+div.border-pale-green,  
+div.border-pale-orange, 
+div.border-pale-purple,
+div.border-pale-yellow 
+{
+  margin: 2em auto;
+  border: 0;
+  padding: 1em;
+}
+
+  div.border-aqua         { border:1.2em solid #00ffff; } 
+  div.border-black        { border:1.2em solid #000000; } 
+  div.border-blue         { border:1.2em solid #0000ff; }
+  div.border-blue2        { border:1.2em solid #DAF4F0; }
+  div.border-fuchsia      { border:1.2em solid #ff00ff; } 
+  div.border-gray         { border:1.2em solid #808080; }
+  div.border-green        { border:1.2em solid #008000; }
+  div.border-darkgreen    { border:1.2em solid #006400; }
+  div.border-lime         { border:1.2em solid #00ff00; } 
+  div.border-maroon       { border:1.2em solid #800000; }
+  div.border-navy         { border:1.2em solid #000080; }
+  div.border-olive        { border:1.2em solid #808000; }
+  div.border-orange       { border:1.2em solid #ffA500; }
+  div.border-orange2      { border:1.2em solid #FFDAB9; }
+  div.border-pink         { border:1.2em solid #FFE5F9; }
+  div.border-purple       { border:1.2em solid #800080; }
+  div.border-purple3      { border:1.2em solid #E6E6FA; }
+  div.border-red          { border:1.2em solid #ff0000; }
+  div.border-silver       { border:1.2em solid #c0c0c0; }
+  div.border-teal         { border:1.2em solid #008080; }
+  div.border-white        { border:1.2em solid #ffffff; }
+  div.border-yellow       { border:1.2em solid #ffff00; }
+  div.border-pale-blue    { border:1.2em solid #CAF7F5; }
+  div.border-pale-green   { border:1.2em solid #CCFFCC; }
+  div.border-pale-orange  { border:1.2em solid #FFE5C0; }
+  div.border-pale-purple  { border:1.2em solid #D7CFFF; }
+  div.border-pale-yellow  { border:1.2em solid #F9FFE6; }
+

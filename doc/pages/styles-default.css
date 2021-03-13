@@ -1,0 +1,251 @@
+/*
+      Format is: ELEMENT SELECTORS { STYLE PROPERTIES }
+    For example: h1,h2 { font-size:large; }
+
+    . refers to a class
+    # refers to a unique id
+*/
+
+* {
+  margin:0; /* select all elements to have no margin between them */
+  box-sizing: border-box; /* padding and border included in total width/height */
+}
+
+/**************************************************************
+* Default CSS Values
+**************************************************************/
+
+
+a:link {
+  color: blue;
+  text-decoration: underline;
+  cursor: auto; 
+} 
+	
+a:visited {
+  color: blue;
+  text-decoration: underline;
+  cursor: auto;
+}	
+
+a:link:active {
+  color: blue;
+}
+
+a:visited:active {
+  color: blue;
+}
+
+article {
+  display: block;
+}
+
+b {
+  font-weight: bold;
+}
+
+body {
+  display: block;
+  margin: 8px;
+}
+ 
+body:focus {
+  outline: none;
+}
+
+code {
+  font-family: monospace;
+}
+
+dl {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+dt {
+  display: block;
+}
+
+dd {
+  display: block;
+  margin-left: 40px;
+}
+
+em {
+  font-style: italic;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h4 {
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+head {display: none;}
+header {display: block;}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+html {display: block;}
+
+html:focus {outline: none;}
+
+i {
+  font-style: italic;
+}
+
+li {
+	display: list-item;
+}
+
+main {display:block;}
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+   
+p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+pre {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0;
+}
+
+q {
+  display: inline;
+}
+ 
+q:before {
+  content: open-quote;
+}
+ 
+q:after {
+  content: close-quote;
+}
+
+small {
+  font-size: smaller;
+}
+
+strong {
+  font-weight: bold;
+}
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: gray;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+td {
+  display: table-cell;
+  vertical-align: inherit;  
+} 
+
+tfoot {
+  display: table-footer-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+th {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: center;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit; 	
+}	
+
+u {
+  text-decoration: underline; 
+} 
+	
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
