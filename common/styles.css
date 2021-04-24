@@ -196,3 +196,64 @@ div.border-pale-yellow
   div.border-pale-purple  { border:1.2em solid #D7CFFF; }
   div.border-pale-yellow  { border:1.2em solid #F9FFE6; }
 
+/**************************************************************
+* Tables
+**************************************************************/
+
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 4px;
+  border-color: gray;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+td {
+  display: table-cell;
+  vertical-align: inherit;  
+} 
+
+tfoot {
+  display: table-footer-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+th {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: center;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit; 	
+}	
+
+table, th, td {
+  border: 3px solid black;
+  border: none;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding-top: 8px;
+  padding-bottom: 2px;
+  padding-right: 2px;
+  padding-left: 40px;
+  text-align: left;
+  font-size: large;
+}
