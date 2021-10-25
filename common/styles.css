@@ -29,7 +29,6 @@ div {
   margin: 0;  /* outermost white space between sub-items */
   border: 0;  /* then thick frame border */
   padding: 0; /* this is background surrounding text */
-  width: 80%;
   background-color: white;
 }
 
@@ -163,9 +162,13 @@ div.border-pale-orange,
 div.border-pale-purple,
 div.border-pale-yellow 
 {
-  margin: 2em auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: 20px;
   border: 0;
   padding: 1em;
+  width: 40em;
 }
 
   div.border-aqua         { border:1.2em solid #00ffff; } 
