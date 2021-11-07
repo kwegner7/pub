@@ -30,6 +30,7 @@ div {
   border: 0;  /* then thick frame border */
   padding: 0; /* this is background surrounding text */
   background-color: white;
+  width: 60%;
 }
 
 div, p, ul {
@@ -162,6 +163,7 @@ div.border-pale-orange,
 div.border-pale-purple,
 div.border-pale-yellow 
 {
+  /* margin: 2em auto; */
   margin-top: 20px;
   margin-bottom: 10px;
   margin-right: auto;
