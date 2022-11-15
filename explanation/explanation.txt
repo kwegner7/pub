@@ -1,0 +1,10 @@
+-- Nary's income after Kurt dies
+   Social Security
+   Withdraw funds from IRA
+
+-- What is the IRA
+   Never took out funds
+
+-- Now how can we get money?
+   Kurt income
+   Withdraw funds from Kurt's IRA  
