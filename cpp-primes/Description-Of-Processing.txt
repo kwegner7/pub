@@ -1,0 +1,27 @@
+SUMMARY:
+
+This program determines all prime numbers less than 10,000. It does this by
+spawning 25 threads running in a Linux process environment. There are 25 primes
+less than 100. For each prime less than 100, there is a distinct thread. Each
+thread determines which numbers from 2 to 10,000 are multiples of this prime.
+For example, the thread for prime 5 will determine that 5, 10, 15, 20 ...
+are multiples of 5 and thus these numbers are not prime numbers.
+
+There is a shared resource for collecting the set of all non-prime numbers.
+The 25 threads are competing to update this shared resource. This shared
+resource is a C++ Standard Template Library "set" container. This is a race
+condition. The C++ <thread> library is used to protect the shared resource
+by means of its mutex capability.
+
+PRINTOUT OF THE PROGRAM AS IT RUNS:
+
+
+
+EXPLANATION:
+
+
+HOW TO SEE THE CODE AND RUN THIS PROGRAM YOURSELF:
+
+WHAT HAPPENS IF MUTEX IS REMOVED:
+
+

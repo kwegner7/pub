@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Thread.cpp</title>
+  <link rel="stylesheet" href="../css/styles-default.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+<!--
+================================================================================ 
+  OUTPUT FROM THE PROGRAM
+================================================================================
+-->
+<div>
+<h3 class="left green">Thread.cpp</h3>
+<pre class="black">
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+void ThreadPrimes::findNotPrimes(const unsigned prime)
+{
+  std::thread::id thisThreadId = std::this_thread::get_id();
+  std::cerr << "Starting thread " << thisThreadId 
+            << " to find numbers that are divisible by the prime " 
+            << prime << std::endl;
+  std::this_thread::sleep_for(500ms);
+
+  /*
+   * Find all numbers divisible by the prime
+   * and add to the set of numbers that are not prime
+   */
+  for (auto const& number: universal)
+  {
+    if ((number % prime) == 0)
+    {
+      // PROTECTED REGION
+      SharedResources::mutexForNotPrimes.lock();
+        if (number != prime)
+        {
+          SharedResources::setOfNotPrimes.insert(number);
+        }
+      SharedResources::mutexForNotPrimes.unlock();
+      //END PROTECTED REGION
+    }
+  }
+
+  std::this_thread::sleep_for(20ms);
+  thisThreadId = std::this_thread::get_id();
+  std::cerr << "Thread " << thisThreadId 
+            << " for prime " << prime 
+            << " has finished" << std::endl;
+
+  return;
+}
+</pre>
+</div>
+
+
+</body>
+</html>

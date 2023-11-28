@@ -1,9 +1,26 @@
 #===============================================================================
 # How to Push to the Repository
 #===============================================================================
-cd /home/kurt/repo/pub/examples
+cd /home/kurt/repo/pub
 git status
 On branch gh-pages
+git add --all
+git remote -v
+origin	https://github.com/kwegner7/pub.git
+git branch -v
+gh-pages
+git commit -m "Job search examples"
+
+https://github.com/login
+kurt email or kwegner7 / Sunari..77
+new password: Sunari(9)
+
+See ~/repo/github-personal-access-token.txt
+
+git push --dry-run origin gh-pages
+
+https://kwegner7.github.io/pub/examples/index-satellites.html  
+
 
 #===============================================================================
 # Create HTML to demonstrate Jupyter Notebook Satellites and Linux C++ Threads
