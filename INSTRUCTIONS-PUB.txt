@@ -3,13 +3,16 @@
 #===============================================================================
 cd /home/kurt/repo/pub
 git status
+git branch -v
 On branch gh-pages
 git add --all
 git remote -v
+git lg -9
+
 origin	https://github.com/kwegner7/pub.git
 git branch -v
 gh-pages
-git commit -m "Job search examples"
+git commit -m "Coding examples"
 
 https://github.com/login
 kurt email or kwegner7 / Sunari..77
@@ -18,9 +21,12 @@ new password: Sunari(9)
 See ~/repo/github-personal-access-token.txt
 
 git push --dry-run origin gh-pages
+kwegner7
+Personal Access Token
 
 https://kwegner7.github.io/pub/examples/index-satellites.html  
 
+https://kwegner7.github.io/pub/cpp-primes/index.html
 
 #===============================================================================
 # Create HTML to demonstrate Jupyter Notebook Satellites and Linux C++ Threads
