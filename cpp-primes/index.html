@@ -58,11 +58,29 @@ multi-thread processes:
 
 <!--
 ================================================================================ 
+  DOCKER
+================================================================================
+-->
+<div>
+<h3 class="left under green">HOW TO RUN THE DOCKER IMAGE</h3>
+<p>
+The Docker image is hosted on Docker Hub as a public image. From a Linux terminal or
+Windows Powershell type:
+<pre class="black">
+    docker run kwegner7/prime0
+</pre>
+<p>
+It can also be run from Docker Desktop by searching for "kwegner7/prime0"
+</p>
+</div>
+
+<!--
+================================================================================ 
   OUTPUT FROM THE PROGRAM
 ================================================================================
 -->
 <div>
-<h3 class="left under green">RUNNING THE PROGRAM</h3>
+<h3 class="left under green">OUTPUT FROM THE PROGRAM</h3>
 <p>
 Because there are many threads, the order that the threads start and finish
 is not deterministic. The final result is a list of all of the primes less than 10,000.
@@ -301,9 +319,11 @@ deadlock condition, modify the wait() so that the lock times out after
  */
 std::unique_lock<std::mutex> ul(SharedResources::mutexForConditionVariable);
 SharedResources::conditionVariable.wait(ul);
-
+</pre>
+<pre class=blue>
         change the wait to be:
-
+</pre>
+<pre class=black>
 SharedResources::conditionVariable.wait_for(ul, 10s);
 </pre>
 When the program is run again, the 25 threads all run to completion, then
