@@ -15,7 +15,7 @@ https://www.tutorialbrain.com/css_tutorial/css_font_family_list/
 .under  { text-decoration: underline; }
 .center { text-align: center; }
 .bold   { font-weight: bold; }
-.shift  { padding-left: 5%; padding-right: 5%; font-size: small;}
+.shift  { padding-left: 5%; padding-right: 5%; font-size: medium;}
 
 a[target="_abc"] {
   background-color: yellow;
@@ -44,13 +44,13 @@ div {
 
 div, p, ul {
   line-height: 120%;
-  font-size: small;
+  font-size: medium;
 }
 
 pre {
   line-height: 120%;
   font-family: Consolas, monaco, monospace;
-  font-size: small;
+  font-size: medium;
   color: green;
   font-weight: bold;
   padding-left: 5%; padding-right: 5%; 
@@ -105,7 +105,7 @@ p {
   margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
-  font-size: small;
+  font-size: medium;
 }
 
 ul {
@@ -285,5 +285,5 @@ th, td {
   padding-right: 2px;
   padding-left: 40px;
   text-align: left;
-  font-size: small;
+  font-size: medium;
 }
